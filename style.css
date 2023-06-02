@@ -1,0 +1,562 @@
+/* PERPUSTAKAAN UNIGHA */
+
+/* Created by : M. Revanza Yuzar (Revan) */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+body {
+   background-image: url('background/background.jpg');
+   background-color: lightblue;
+   background-size: auto;
+   font-family: Verdana, Arial, Sans-Serif;
+}
+
+.container {
+   max-width: 100%;
+}
+
+div.header {
+   background-color: black;
+   width: 100%;
+   border-bottom: 5px solid blue;
+}
+
+.header img {
+   margin-top: 7px;
+}
+
+.header h1 {
+   color: gold;
+   font-size: 25px;
+   text-align: center;
+   margin-bottom: 7px;
+}
+
+.header h1#kampus {
+   font-size: 18px;
+}
+
+.header p {
+   color: white;
+   font-size: 15px;
+   text-align: center;
+   line-height: 1.5em;
+   margin-bottom: 15px;
+}
+
+.header marquee {
+   background-color: yellow;
+   border-left: 10px solid black;
+   border-right: 10px solid black;
+   margin-bottom: 5px;
+}
+
+.header h3 {
+   color: black;
+   font-size: 18px;
+   font-weight: normal;
+   margin: 5px;
+}
+
+div.waktu, div.main {
+   padding: 5px;
+}
+
+div#waktu {
+   width: 100%;
+   float: left;
+   margin-top: 30px;
+}
+
+div#tanggal {
+   width: 49%;
+   color: black;
+   background-color: aqua;
+   border: 3px solid black;
+   font-size: 18px;
+   font-weight: bold;
+   text-align: center;
+   float: left;
+   margin-bottom: 0;
+   padding: 10px;
+}
+
+div#jam {
+   width: 49%;
+   color: black;
+   background-color: aqua;
+   border: 3px solid black;
+   font-size: 18px;
+   font-weight: bold;
+   text-align: center;
+   float: right;
+   margin-bottom: 0;
+   padding: 10px;
+}
+
+.main marquee {
+   width: 100%;
+   text-align: center;
+   padding: 3px;
+}
+
+.main h3 {
+   color: black;
+   font-size: 18px;
+   text-align: center;
+   border-bottom: 3px solid black;
+   margin-bottom: 25px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   background-color: orange;
+}
+
+.main h3#left {
+   border-top: 3px solid black;
+   border-bottom: 3px solid black;
+}
+
+.main h3#berita {
+   background-color: yellow;
+}
+
+.main h3#akun {
+   background-color: yellow;
+   border-top: 3px solid black;
+   border-bottom: 3px solid black;
+}
+
+.main h3#right {
+   border-top: 3px solid black;
+   border-bottom: 3px solid black;
+}
+
+.main p#Judul {
+   color: black;
+   font-size: 18px;
+   text-align: center;
+   line-height: 1.5em;
+   margin-bottom: 25px;
+}
+
+.main p#Singkat {
+   color: black;
+   font-size: 15px;
+   text-align: justify;
+   line-height: 1.5em;
+   margin: 25px;
+}
+
+.main p#Selengkapnya {
+   color: black;
+   font-size: 15px;
+   text-align: left;
+   line-height: 1.5em;
+   margin: 25px;
+}
+
+.main p#tanya {
+   color: black;
+   font-size: 18px;
+   font-weight: bold;
+   text-align: center;
+   line-height: 1.5em;
+   margin: 25px;
+}
+
+.main p#daftar {
+   color: black;
+   font-size: 16px;
+   font-weight: bold;
+   text-align: left;
+   line-height: 1.5em;
+   margin: 25px;
+}
+
+.main p.form {
+   color: black;
+   font-size: 15px;
+   text-align: left;
+   line-height: 1.5em;
+   margin-top: 10px;
+   margin-left: 25px;
+}
+
+input#nama {
+   width: 36%;
+   border: 1.5px solid black;
+   padding: 1px;
+   padding-left: 5px;
+   margin-left: 25px;
+}
+
+select#tanggal {
+   width: 8%;
+   text-align: center;
+   border: 1.5px solid black;
+   padding: 1px;
+   margin-left: 25px;
+   background-color: white;
+}
+
+select#bulan {
+   width: 16%;
+   text-align: center;
+   border: 1.5px solid black;
+   padding: 1px;
+   background-color: white;
+}
+
+select#tahun {
+   width: 11%;
+   text-align: center;
+   border: 1.5px solid black;
+   padding: 1px;
+   background-color: white;
+}
+
+input#pria {
+   margin-left: 25px;
+}
+
+input#wanita {
+   margin-left: 25px;
+}
+
+input#email {
+   width: 36%;
+   border: 1.5px solid black;
+   padding: 1px;
+   padding-left: 5px;
+   margin-left: 25px;
+}
+
+input#password {
+   width: 36%;
+   border: 1.5px solid black;
+   padding: 1px;
+   padding-left: 5px;
+   margin-left: 25px;
+}
+
+button#submit {
+   width: 20%;
+   color: blue;
+   font-size: 16px;
+   font-weight: bold;
+   border: 1.5px solid blue;
+   padding: 2px;
+   float: left;
+   margin-left: 26%;
+   margin-bottom: 30px;
+   background-color: white;
+}
+
+button#submit:hover {
+   color: white;
+   background-color: black;
+   border: 1.5px solid white;
+}
+
+button#reset {
+   width: 20%;
+   color: red;
+   font-size: 16px;
+   font-weight: bold;
+   border: 1.5px solid red;
+   padding: 2px;
+   float: right;
+   margin-right: 26%;
+   margin-bottom: 30px;
+   background-color: white;
+}
+
+button#reset:hover {
+   color: white;
+   background-color: black;
+   border: 1.5px solid white;
+}
+
+div.footer {
+   background-color: black;
+   width: 100%;
+   float: left;
+   border-top: 5px solid blue;
+   margin-top: 30px;
+   padding: 22px;
+}
+
+.footer p {
+   color: white;
+   font-size: 15px;
+   text-align: center;
+   line-height: 1.5em;
+}
+
+a {
+   color: black;
+   font-size: 15px;
+}
+
+a:hover {
+   color: gold;
+}
+
+a:active {
+   color: blue;
+}
+
+#Selengkapnya a {
+   color: black;
+   font-size: 16px;
+}
+
+#Selengkapnya a:hover {
+   color: white;
+}
+
+#Selengkapnya a:active {
+   color: blue;
+}
+
+/* ------- Main / Isi ------- */
+
+.main ul li {
+   list-style: none;
+}
+
+.left {
+   width: 20%;
+   border: 3px solid black;
+   margin-top: 85px;
+   float: left;
+   background-color: lightslategray;
+}
+
+.left ul li a {
+   display: block;
+   text-align: center;
+   border: 3px solid black;
+   margin-top: 25px;
+   margin-bottom: 25px;
+   margin-left: 7px;
+   margin-right: 7px;
+   padding: 3px;
+   background-color: white;
+}
+
+.left ul li a:hover {
+   background-color: black;
+   border: 3px solid white;
+}
+
+.mid {
+   width: 59%;
+   border: 3px solid black;
+   margin-top: 30px;
+   margin-left: 0.5%;
+   float: left;
+   background-color: aqua;
+}
+
+.mid img {
+   padding: 7px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+
+.right {
+   width: 20%;
+   border: 3px solid black;
+   margin-top: 85px;
+   float: right;
+   background-color: lightslategray;
+}
+
+.right ul li a {
+   display: block;
+   text-align: center;
+   border: 3px solid black;
+   margin-top: 25px;
+   margin-bottom: 25px;
+   margin-left: 7px;
+   margin-right: 7px;
+   padding: 3px;
+   background-color: white;
+}
+
+.right ul li a:hover {
+   background-color: black;
+   border: 3px solid white;
+}
+
+/* -------------------------------------------------- */
+
+@media (max-width: 1080px) {
+   
+   .all {
+      max-width: 100%;
+   }
+ 
+   .header {
+      width: 100%;
+      text-align: center;
+   }
+ 
+   .header img {
+      width: 10%;
+      padding-bottom: 3px;
+   }
+ 
+   .header h1 {
+      font-size: 13px;
+   }
+
+   .header h1#kampus {
+      font-size: 12px;
+   }
+   
+   .header p {
+      font-size: 11px;
+      margin-bottom: 5px;
+   }
+   
+   .header h3 {
+      font-size: 11px;
+   }
+   
+   div#waktu {
+      width: 100%;
+      padding: 5px;
+      margin-top: 15px;
+   }
+   
+   div#tanggal {
+      width: 100%;
+      font-size: 11px;
+      float: left;
+      margin-bottom: 15px;
+   }
+   
+   div#jam {
+      width: 100%;
+      font-size: 11px;
+      float: left;
+   }
+   
+   .main h3 {
+      font-size: 12px;
+   }
+   
+   .main a {
+      font-size: 11px;
+   }
+ 
+   .left {
+      width : 100%;
+      float: left;
+      margin-top: 15px;
+   }
+ 
+   .mid {
+      width : 100%;
+      float : left;
+      margin: 0;
+      margin-top: 15px;
+      font-size: 12px;
+   }
+   
+   .mid p#Judul {
+      font-size: 12px;
+   }
+ 
+   .mid img {
+      width: 100%;
+   }
+   
+   .mid p#Singkat {
+      font-size: 11px;
+   }
+   
+   .mid p#Selengkapnya a {
+      font-size: 11px;
+   }
+   
+   .mid p#tanya {
+      font-size: 12px;
+   }
+   
+   .mid p#daftar {
+      font-size: 11px;
+   }
+   
+   .mid p.form {
+      font-size: 11px;
+   }
+   
+   input#nama {
+      width: 60%;
+   }
+   
+   select#tanggal {
+      width: 13%;
+      font-size: 11px;
+      text-align: center;
+   }
+   
+   select#bulan {
+      width: 29%;
+      font-size: 11px;
+      text-align: center;
+   }
+   
+   select#tahun {
+      width: 17%;
+      font-size: 11px;
+      text-align: center;
+   }
+   
+   input#email {
+      width: 60%;
+   }
+   
+   input#password {
+      width: 60%;
+   }
+   
+   button#submit {
+      width: 25%;
+      margin-left: 20%;
+      font-size: 11px;
+   }
+   
+   button#reset {
+      width: 25%;
+      margin-right: 20%;
+      font-size: 11px;
+   }
+   
+   .right {
+      width : 100%;
+      float : left;
+      margin-top: 15px;
+   }
+ 
+   #footer {
+      width: 100%;
+      text-align: center;
+      margin-top: 15px;
+      padding: 15px;
+   }
+   
+   .footer p {
+      font-size: 11px;
+   }
+}
