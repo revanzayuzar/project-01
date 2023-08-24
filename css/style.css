@@ -1,0 +1,559 @@
+/* PROJECT - 01 | Style */
+
+/* Created by : M. Revanza Yuzar (Revan) */
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+   --primary: rgb(0, 0, 125);
+   --primary-light: rgb(0, 0, 200);
+   --primary-dark: rgb(0, 0, 50);
+
+   --secondary: rgb(225, 200, 0);
+   --secondary-light: rgb(250, 250, 0);
+   --secondary-dark: rgb(200, 150, 0);
+
+   --body-color: rgb(222, 222, 222);
+   --header-color: rgba(0, 0, 0, 0.5);
+   --footer-color: var(--primary-dark);
+
+   --text-primary: black;
+   --text-secondary: white;
+   --text-important: red;
+
+   --color-before: white;
+   --color-hover: var(--secondary-light);
+   --color-focus: red;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+body {
+   background-image: url(../img/background.jpg);
+   background-size: 40%;
+   background-color: var(--body-color);
+   font-family: 'Poppins', sans-serif;
+}
+
+header {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   width: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 999;
+   background-color: var(--header-color);
+   padding: 5px;
+}
+
+header img {
+   display: block;
+   width: 50px;
+   margin: 0 10px;
+}
+
+header h1 {
+   color: var(--secondary-light);
+   font-size: 25px;
+   font-weight: 500;
+   letter-spacing: 1px;
+}
+
+.hero {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   width: 100%;
+   height: 100vh;
+   background-color: var(--primary-light);
+}
+
+.hero p {
+   color: white;
+   font-size: 20px;
+   font-weight: 400;
+}
+
+.hero .ketik {
+   width: max-content;
+}
+
+@keyframes ketik {
+   0% {
+      width: 0;
+      visibility: hidden;
+   }
+
+   75% {
+      width: 100%;
+   }
+
+   100% {
+      width: 0;
+   }
+}
+
+.hero p#welcome {
+   font-family: 'Kalam', cursive;
+   overflow: hidden;
+   white-space: nowrap;
+   padding-right: 15px;
+   border-right: 2px solid var(--secondary-light);
+   animation: ketik 3s steps(18) infinite;
+}
+
+.hero .usap {
+   overflow: hidden;
+}
+
+@keyframes diagonal {
+   0% {
+      opacity: 0.7;
+      transform: translateX(100%) translateY(-100%);
+   }
+
+   25% {
+      opacity: 1;
+      transform: translateX(0) translateY(0);
+   }
+
+   75% {
+      opacity: 1;
+      transform: translateX(0) translateY(0);
+   }
+
+   100% {
+      opacity: 0.7;
+      transform: translateX(-100%) translateY(100%);
+   }
+}
+
+.hero p#judul {
+   color: var(--secondary-light);
+   font-size: 40px;
+   font-weight: 700;
+   animation: diagonal 12s infinite;
+   animation-timing-function: ease-in-out;
+}
+
+@keyframes kedip {
+   40% {
+      color: transparent;
+   }
+
+   100% {
+      color: white;
+   }
+}
+
+.hero p#unigha {
+   text-align: center;
+   letter-spacing: 1px;
+   animation: kedip 1s infinite;
+}
+
+.hero .text {
+   display: flex;
+   flex-direction: column;
+}
+
+@keyframes melayang {
+   0% {
+      transform: scale(0.93);
+   }
+
+   50% {
+      transform: scale(1);
+   }
+
+   100% {
+      transform: scale(0.93);
+   }
+}
+
+.hero img {
+   width: 300px;
+   filter: drop-shadow(0 0 50px white);
+   animation: melayang 6s infinite;
+   animation-timing-function: ease-in-out;
+}
+
+.waktu {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   color: var(--secondary);
+   background-color: var(--primary);
+   font-size: 18px;
+   font-weight: 400;
+   letter-spacing: 1px;
+   padding: 10px 0;
+}
+
+.content {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   padding: 75px 10px;
+}
+
+@keyframes left-right {
+   0% {
+      box-shadow: 0 0 15px var(--primary-light);
+   }
+
+   50% {
+      box-shadow: none;
+   }
+
+   100% {
+      box-shadow: 0 0 15px var(--primary-light);
+   }
+}
+
+.content .left,
+.content .right {
+   width: 20%;
+   background-color: var(--primary-dark);
+   padding-top: 25px;
+   border: 2px solid var(--secondary-light);
+   border-radius: 7px;
+   animation: left-right 3s infinite;
+   animation-timing-function: ease-in-out;
+}
+
+@keyframes mid {
+   0% {
+      box-shadow: 0 0 15px var(--secondary-light);
+   }
+
+   50% {
+      box-shadow: none;
+   }
+
+   100% {
+      box-shadow: 0 0 15px var(--secondary-light);
+   }
+}
+
+.content .mid {
+   width: 58%;
+   background-color: var(--secondary-light);
+   padding-top: 25px;
+   border: 2px solid var(--primary-dark);
+   border-radius: 7px;
+   animation: mid 3s infinite;
+   animation-timing-function: ease-in-out;
+}
+
+@keyframes kedip-h2 {
+   25% {
+      color: transparent;
+   }
+
+   100% {
+      color: var(--secondary-light);
+   }
+}
+
+.content h2 {
+   width: 90%;
+   color: var(--secondary-light);
+   font-size: 22px;
+   font-weight: 500;
+   text-align: center;
+   margin: auto;
+   margin-bottom: 50px;
+   padding: 10px 0;
+   border-bottom: 7px solid var(--secondary-light);
+   animation: kedip-h2 3s infinite;
+}
+
+@keyframes kedip-h2-mid {
+   25% {
+      color: transparent;
+   }
+
+   100% {
+      color: var(--primary-light);
+   }
+}
+
+.content .mid h2 {
+   width: 100%;
+   color: var(--primary-light);
+   border-top: 7px solid var(--primary-light);
+   border-bottom: 7px solid var(--primary-light);
+   animation: kedip-h2-mid 3s infinite;
+}
+
+.content h3 {
+   color: var(--text-primary);
+   font-size: 20px;
+   font-weight: 500;
+   text-align: center;
+}
+
+.content .ketik {
+   width: max-content;
+   margin: auto;
+}
+
+.content h3#terbaru {
+   overflow: hidden;
+   white-space: nowrap;
+   padding-right: 15px;
+   border-right: 2px solid var(--text-primary);
+   animation: ketik 3s steps(32) infinite;
+}
+
+@keyframes kedip-h3-daftar {
+   50% {
+      color: transparent;
+   }
+
+   100% {
+      color: var(--text-important);
+   }
+}
+
+.content h3#daftar {
+   color: var(--text-important);
+   animation: kedip-h3-daftar 0.7s infinite;
+}
+
+.content h4 {
+   color: var(--text-primary);
+   font-size: 16px;
+   font-weight: 500;
+   margin-top: 25px;
+   margin-bottom: 5px;
+}
+
+.content h4 span {
+   color: var(--text-important);
+}
+
+.content ul {
+   list-style: none;
+}
+
+.content a {
+   display: block;
+   width: 90%;
+   color: var(--color-before);
+   background-color: var(--primary-dark);
+   font-size: 15px;
+   font-weight: 400;
+   text-align: center;
+   margin: auto;
+   margin-bottom: 25px;
+   padding: 5px 0;
+   border: 1.5px solid var(--color-before);
+   border-radius: 25px;
+}
+
+.content a:hover {
+   color: var(--color-hover);
+   background-color: var(--primary);
+   border-color: var(--color-hover);
+   text-shadow: 0 0 20px var(--color-hover), 0 0 10px var(--color-hover);
+   box-shadow: 0 0 25px var(--color-hover);
+   transition-property: all;
+   transition-duration: 0.25s;
+}
+
+.content .mid-01,
+.content .mid-02 {
+   width: 96%;
+   margin: auto;
+   margin-bottom: 75px;
+}
+
+.content .mid-01 img {
+   width: 100%;
+   margin: 25px 0;
+   border: 1px solid black;
+}
+
+.content .mid-01 p {
+   color: var(--text-primary);
+   font-size: 16px;
+   font-weight: 400;
+   text-align: justify;
+   letter-spacing: 1px;
+   line-height: 1.5;
+}
+
+.content .mid-01 a {
+   width: 50%;
+   transform: scale(0.98);
+   margin-top: 25px;
+}
+
+.content .mid-01 a:hover {
+   transform: scale(1);
+   text-shadow: 0 0 20px var(--primary-light), 0 0 10px var(--primary-light);
+   box-shadow: 0 0 25px var(--primary-light);
+   transition-duration: 0.1s;
+}
+
+.content .mid-02 form {
+   width: 75%;
+   margin: auto;
+   margin-top: 50px;
+}
+
+.content .mid-02 input,
+.content .mid-02 select,
+.content .mid-02 button {
+   width: 100%;
+   color: var(--color-before);
+   background-color: var(--primary-dark);
+   font-size: 15px;
+   font-weight: normal;
+   letter-spacing: 0.5px;
+   padding: 7px;
+   border: 2px solid var(--color-before);
+   border-radius: 5px;
+}
+
+.content .mid-02 input:focus,
+.content .mid-02 select:focus {
+   border-color: var(--color-focus);
+}
+
+.content .mid-02 select {
+   width: 32%;
+}
+
+.content .mid-02 .select {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.content .mid-02 input[type="radio"] {
+   appearance: none;
+   width: 25px;
+   height: 25px;
+   margin-right: 10px;
+   border: 7px solid transparent;
+   border-radius: 50%;
+}
+
+.content .mid-02 input[type="radio"]:checked {
+   background-color: var(--color-before);
+   border-color: var(--primary-dark);
+}
+
+.content .mid-02 label {
+   font-size: 15px;
+   font-weight: 500;
+   letter-spacing: 0.5px;
+}
+
+.content .mid-02 label#pria {
+   color: rgb(25, 25, 255);
+}
+
+.content .mid-02 label#wanita {
+   color: rgb(255, 25, 65);
+}
+
+.content .mid-02 .radio {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.content .mid-02 .item {
+   display: flex;
+   align-items: center;
+}
+
+.content .mid-02 button {
+   width: 40%;
+   padding: 10px;
+   border-radius: 25px;
+}
+
+.content .mid-02 button#submit {
+   background-color: rgb(0, 0, 255);
+}
+
+.content .mid-02 button#submit:hover {
+   background-color: rgb(0, 0, 175);
+   box-shadow: 0 0 25px blue;
+   transition: 0.15s;
+}
+
+.content .mid-02 button#reset {
+   background-color: rgb(255, 0, 0);
+}
+
+.content .mid-02 button#reset:hover {
+   background-color: rgb(175, 0, 0);
+   box-shadow: 0 0 25px red;
+   transition: 0.15s;
+}
+
+.content .mid-02 .button {
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 50px;
+}
+
+footer {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+   width: 100%;
+   background-color: var(--footer-color);
+   padding: 25px;
+   border-top: 2px solid var(--secondary-light);
+}
+
+footer img {
+   display: block;
+   width: 100px;
+   filter: drop-shadow(0 0 5px white);
+}
+
+footer .left,
+footer .right {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: max-content;
+}
+
+footer p {
+   color: var(--secondary);
+   font-size: 16px;
+   font-weight: 300;
+   letter-spacing: 1px;
+   margin-bottom: 10px;
+}
+
+footer p#judul {
+   font-size: 20px;
+   font-weight: 500;
+   text-transform: uppercase;
+}
+
+footer p#desainer {
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 18px;
+   letter-spacing: 0;
+}

@@ -1,0 +1,295 @@
+/* PROJECT - 01 | Responsive */
+
+/* Created by : M. Revanza Yuzar (Revan) */
+
+@media (max-width: 1080px) {
+
+    body {
+        background-size: 50%;
+    }
+
+    .content .mid-01 a {
+        width: 70%;
+    }
+
+    .content .mid-02 form {
+        width: 90%;
+    }
+
+}
+
+
+
+@media (max-width: 900px) {
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    .hero {
+        justify-content: space-around;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero p#judul {
+        font-size: 30px;
+    }
+
+    .waktu {
+        font-size: 15px;
+    }
+
+    .content h2 {
+        font-size: 20px;
+    }
+
+    .content h3 {
+        font-size: 18px;
+    }
+
+    .content a {
+        font-size: 13px;
+    }
+
+    .content .mid-01 p {
+        font-size: 15px;
+    }
+
+    .content .mid-02 form {
+        width: 100%;
+    }
+
+    footer .right {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    body {
+        background-size: 60%;
+    }
+
+    .content {
+        justify-content: center;
+        padding-bottom: 0;
+    }
+
+    .content .left,
+    .content .mid,
+    .content .right {
+        width: 90%;
+        margin-bottom: 75px;
+        padding: 50px 0;
+    }
+
+    .content h2 {
+        width: 50%;
+        font-size: 22px;
+    }
+
+    .content a {
+        width: 70%;
+        font-size: 15px;
+    }
+
+    .content .mid-01,
+    .content .mid-02 {
+        width: 80%;
+    }
+
+}
+
+
+
+@media (max-width: 720px) {
+
+    .hero {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .hero img {
+        margin-bottom: 25px;
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    .content .mid-01,
+    .content .mid-02 {
+        width: 90%;
+    }
+
+}
+
+
+
+@media (max-width: 500px) {
+
+    body {
+        background-size: 80%;
+    }
+
+    .hero p#judul {
+        font-size: 28px;
+    }
+
+    .content .left,
+    .content .mid,
+    .content .right {
+        width: 100%;
+    }
+
+    .content .mid-01,
+    .content .mid-02 {
+        width: 96%;
+    }
+
+    footer .left {
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    footer .right {
+        align-items: flex-end;
+    }
+
+}
+
+
+
+@media (max-width: 450px) {
+
+    .content .mid-01 p {
+        letter-spacing: 0;
+    }
+
+    .content .mid-01 a {
+        width: 80%;
+    }
+
+    footer {
+        justify-content: flex-start;
+    }
+
+    footer .right {
+        align-items: flex-start;
+    }
+
+    footer p {
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+
+}
+
+
+
+@media (max-width: 425px) {
+
+    .content .mid-02 select {
+        width: 45%;
+    }
+
+    .content .mid-02 select.tahun {
+        margin-top: 15px;
+    }
+
+    .content .mid-02 .select {
+        justify-content: space-around;
+    }
+
+}
+
+
+
+@media (max-width: 375px) {
+
+    header img {
+        margin-left: 0;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    .hero img {
+        width: 275px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .hero p#judul {
+        font-size: 22px;
+    }
+
+    .waktu {
+        flex-direction: column;
+    }
+
+    .content h2 {
+        width: 60%;
+    }
+
+    .content h3 {
+        font-size: 16px;
+    }
+
+    .content h3#terbaru {
+        padding-right: 10px;
+    }
+
+    .content h4 {
+        font-size: 15px;
+    }
+
+    .content a {
+        width: 80%;
+    }
+
+    .content .mid-01,
+    .content .mid-02 {
+        width: 98%;
+    }
+
+}
+
+
+
+@media (max-width: 350px) {
+
+    header h1 {
+        font-size: 17px;
+    }
+
+    footer img {
+        width: 75px;
+    }
+
+    footer p {
+        font-size: 11px;
+    }
+
+    footer p#judul {
+        font-size: 16px;
+    }
+
+    footer p#desainer {
+        font-size: 15px;
+    }
+
+}

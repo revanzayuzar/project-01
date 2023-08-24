@@ -1,4 +1,4 @@
-<!-- PERPUSTAKAAN UNIGHA -->
+<!-- PROJECT - 01 | Index -->
 
 <!-- Created by : M. Revanza Yuzar (Revan) -->
 
@@ -7,286 +7,305 @@
 <html>
 
 <head>
-   <title> PERPUSTAKAAN UNIGHA </title>
-
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <link rel="icon" href="logo/logo-unigha.png">
-
-   <link rel="stylesheet" href="style.css">
+   <link rel="icon" href="img/unigha-logo.png">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/responsive.css">
 
    <script>
       function pesan() {
-         alert("HAI, SELAMAT DATANG DI WEBSITE KAMI!")
-         let nama = prompt(" Siapakah Nama Anda?")
-         alert("Hai " + nama + "! Semoga Harimu Menyenangkan...")
+         alert("Selamat Datang Di Perpustakaan Unigha")
+         let nama = prompt("Siapakah Nama Anda?")
+         alert("Hai " + nama + "! Semoga Harimu Menyenangkan")
       }
    </script>
+
+   <title> PERPUSTAKAAN UNIGHA </title>
 </head>
 
 <body onload="pesan()">
-   <div class="container">
-      <div class="header" id="header">
-         <h1><img src="logo/logo-unigha.png" alt="Logo Unigha" title="Logo Unigha" width="5%"> <br> PERPUSTAKAAN
-            UNIVERSITAS JABAL GHAFUR SIGLI </h1>
-         <h1 id="kampus"> KAMPUS B MEUREUDU </h1>
-         <p> Jalan Banda Aceh - Medan, Komplek Kampus B Meureudu, Tringgadeng, Pidie Jaya. Email : unigha@gmail.com </p>
-         <marquee>
-            <h3> SELAMAT DATANG DI PERPUSTAKAAN UNIVERSITAS JABAL GHAFUR SIGLI (KAMPUS B MEUREUDU) </h3>
-         </marquee>
+   <header>
+      <a href="#">
+         <img src="img/unigha-logo.png" alt="Logo Unigha" title="Logo Unigha">
+      </a>
+      <h1> PERPUSTAKAAN UNIGHA </h1>
+   </header>
+
+   <main>
+      <div class="hero">
+         <div class="text">
+            <div class="ketik">
+               <p id="welcome"> SELAMAT DATANG DI </p>
+            </div>
+
+            <div class="usap">
+               <p id="judul"> PERPUSTAKAAN UNIGHA </p>
+            </div>
+            <p id="unigha"> - Universitas Jabal Ghafur - </p>
+         </div>
+         <img src="img/unigha-logo.png" alt="Logo Unigha">
       </div>
 
-      <div class="waktu" id="waktu">
+      <div class="waktu">
          <div class="tanggal" id="tanggal">
             <script>
                let date = new Date()
                let hari = new
                Array("Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu")
                let bulan = new
-               Array("Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober",
-                  "November", "Desember")
+               Array("Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember")
                document.write(hari[date.getDay()] + ", ")
                document.write(date.getDate() + " ")
                document.write(bulan[date.getMonth()] + " ")
                document.write(date.getFullYear() + ". ")
             </script>
          </div>
-
+   
          <div class="jam" id="jam">
             <script>
                setInterval(() => {
-                  let waktu = new Date()
+                  let date = new Date()
                   let jam = document.getElementById("jam")
-                  jam.innerHTML =
-                     " Pukul : " +
-                     waktu.getHours() + " : " +
-                     waktu.getMinutes() + " : " +
-                     waktu.getSeconds() + " - Waktu Indonesia Barat "
+                  jam.innerHTML = "Pukul " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " WIB"
                }, 1000);
             </script>
          </div>
       </div>
 
-      <div class="main">
+      <div class="content">
          <div class="left">
-            <h3>
-               <marquee behavior="scroll" direction="up" scrolldelay="750"> MENU UTAMA </marquee>
-            </h3>
+            <h2> MENU </h2>
             <ul>
-               <li><a href="Login.html"> Login </a></li>
-               <li><a href="Home.html"> Home </a></li>
-               <li><a href="Daftar Buku.html"> Daftar Buku </a></li>
-               <li><a href="Berita.html"> Berita </a></li>
-               <li><a href="About.html"> About </a></li>
+               <li><a href="#"> Login </a></li>
+               <li><a href="#"> Daftar Buku </a></li>
+               <li><a href="#"> Berita </a></li>
+               <li><a href="#"> Layanan </a></li>
+               <li><a href="#"> Komunitas </a></li>
+               <li><a href="#"> Bantuan </a></li>
+               <li><a href="#"> Masukan </a></li>
+               <li><a href="#"> Tentang </a></li>
             </ul>
-
-            <br>
-
-            <h3 id="left">
-               <marquee behavior="scroll" direction="up" scrolldelay="750"> MENU LAINNYA </marquee>
-            </h3>
-            <ul>
-               <li><a href="Komunitas.html"> Komunitas </a></li>
-               <li><a href="Layanan.html"> Layanan </a></li>
-               <li><a href="Bantuan.html"> Bantuan </a></li>
-            </ul>
-
-            <br>
          </div>
-
+   
          <div class="mid">
-            <h3 id="berita"> BERITA TERBARU </h3>
-            <p id="Judul"><b> Belajar HTML & CSS Untuk Pemula </b></p>
-            <p><img src="gambar/gambar-01.jpg" alt="Gambar Kode HTML & CSS" title="Gambar Kode HTML & CSS" width="100%">
-            </p>
-            <p id="Singkat"> <b> HTML </b> & <b> CSS </b> merupakan dua bahasa pemrograman berbasis web yang biasanya
-               digunakan untuk mendesain tampilan sebuah website khususnya pada bagian front-end. <br><br> ... </p>
-            <p id="Selengkapnya"><a href="Belajar HTML & CSS Untuk Pemula.html"><i> Baca Selengkapnya >> </i></a></p>
+            <div class="mid-01">
+               <h2> TERBARU </h2>
+               <div class="ketik">
+                  <h3 id="terbaru"> Belajar HTML & CSS Untuk Pemula </h3>
+               </div>
+               <img src="img/html&css.jpg" alt="Gambar Kode HTML & CSS">
+               <p> <b> HTML </b> & <b> CSS </b> merupakan dua bahasa pemrograman berbasis web yang digunakan untuk mendesain tampilan pada sebuah website khususnya pada bagian front-end. <br><br> ... </p>
+               <a href="#"> Baca Selengkapnya >> </a>
+            </div>
+   
+            <div class="mid-02">
+               <h2> BUAT AKUN </h2>
+               <h3> Belum Memiliki Akun?? </h3>
+               <h3 id="daftar"> Daftar Sekarang! </h3>
 
-            <!-- --------------------------- -->
+               <form action="#">
+                  <h4><span> * </span> Masukkan Nama Anda </h4>
+                  <input type="text" placeholder="Nama">
+   
+                  <h4><span> * </span> Pilih Tanggal Lahir Anda </h4>
+                  <div class="select">
+                     <select class="tanggal">
+                        <option> * Tanggal </option>
+                        <option> 1 </option>
+                        <option> 2 </option>
+                        <option> 3 </option>
+                        <option> 4 </option>
+                        <option> 5 </option>
+                        <option> 6 </option>
+                        <option> 7 </option>
+                        <option> 8 </option>
+                        <option> 9 </option>
+                        <option> 10 </option>
+                        <option> 11 </option>
+                        <option> 12 </option>
+                        <option> 13 </option>
+                        <option> 14 </option>
+                        <option> 15 </option>
+                        <option> 16 </option>
+                        <option> 17 </option>
+                        <option> 18 </option>
+                        <option> 19 </option>
+                        <option> 20 </option>
+                        <option> 21 </option>
+                        <option> 22 </option>
+                        <option> 23 </option>
+                        <option> 24 </option>
+                        <option> 25 </option>
+                        <option> 26 </option>
+                        <option> 27 </option>
+                        <option> 28 </option>
+                        <option> 29 </option>
+                        <option> 30 </option>
+                        <option> 31 </option>
+                     </select>
+                  
+                     <select class="bulan">
+                        <option> * Bulan </option>
+                        <option> Januari </option>
+                        <option> Februari </option>
+                        <option> Maret </option>
+                        <option> April </option>
+                        <option> Mei </option>
+                        <option> Juni </option>
+                        <option> Juli </option>
+                        <option> Agustus </option>
+                        <option> September </option>
+                        <option> Oktober </option>
+                        <option> November </option>
+                        <option> Desember </option>
+                     </select>
+                  
+                     <select class="tahun">
+                        <option> * Tahun </option>
+                        <option> 1945 </option>
+                        <option> 1946 </option>
+                        <option> 1947 </option>
+                        <option> 1948 </option>
+                        <option> 1949 </option>
+                        <option> 1950 </option>
+                        <option> 1951 </option>
+                        <option> 1952 </option>
+                        <option> 1953 </option>
+                        <option> 1954 </option>
+                        <option> 1955 </option>
+                        <option> 1956 </option>
+                        <option> 1957 </option>
+                        <option> 1958 </option>
+                        <option> 1959 </option>
+                        <option> 1960 </option>
+                        <option> 1961 </option>
+                        <option> 1962 </option>
+                        <option> 1963 </option>
+                        <option> 1964 </option>
+                        <option> 1965 </option>
+                        <option> 1966 </option>
+                        <option> 1967 </option>
+                        <option> 1968 </option>
+                        <option> 1969 </option>
+                        <option> 1970 </option>
+                        <option> 1971 </option>
+                        <option> 1972 </option>
+                        <option> 1973 </option>
+                        <option> 1974 </option>
+                        <option> 1975 </option>
+                        <option> 1976 </option>
+                        <option> 1977 </option>
+                        <option> 1978 </option>
+                        <option> 1979 </option>
+                        <option> 1980 </option>
+                        <option> 1981 </option>
+                        <option> 1982 </option>
+                        <option> 1983 </option>
+                        <option> 1984 </option>
+                        <option> 1985 </option>
+                        <option> 1986 </option>
+                        <option> 1987 </option>
+                        <option> 1988 </option>
+                        <option> 1989 </option>
+                        <option> 1990 </option>
+                        <option> 1991 </option>
+                        <option> 1992 </option>
+                        <option> 1993 </option>
+                        <option> 1994 </option>
+                        <option> 1995 </option>
+                        <option> 1996 </option>
+                        <option> 1997 </option>
+                        <option> 1998 </option>
+                        <option> 1999 </option>
+                        <option> 2000 </option>
+                        <option> 2001 </option>
+                        <option> 2002 </option>
+                        <option> 2003 </option>
+                        <option> 2004 </option>
+                        <option> 2005 </option>
+                        <option> 2006 </option>
+                        <option> 2007 </option>
+                        <option> 2008 </option>
+                        <option> 2009 </option>
+                        <option> 2010 </option>
+                        <option> 2011 </option>
+                        <option> 2012 </option>
+                        <option> 2013 </option>
+                        <option> 2014 </option>
+                        <option> 2015 </option>
+                        <option> 2016 </option>
+                        <option> 2017 </option>
+                        <option> 2018 </option>
+                        <option> 2019 </option>
+                        <option> 2020 </option>
+                        <option> 2021 </option>
+                        <option> 2022 </option>
+                        <option> 2023 </option>
+                     </select>
+                  </div>
 
-            <h3 id="akun"> BUAT AKUN </h3>
-            <p id="tanya"> Apakah Anda Belum Memiliki Akun?? </p>
-            <p id="daftar"> Daftar Sekarang : </p>
+                  <h4><span> * </span> Pilih Jenis Kelamin Anda </h4>
+                  <div class="radio">
+                     <div class="item">
+                        <input type="radio" id="pria" name="jenis kelamin">
+                        <label for="pria" id="pria"> Pria </label>
+                     </div>
 
-            <form>
-               <p class="form"> Masukkan Nama Anda </p>
-               <input type="text" id="nama">
+                     <div class="item">
+                        <input type="radio" id="wanita" name="jenis kelamin">
+                        <label for="wanita" id="wanita"> Wanita </label>
+                     </div>
+                  </div>
+                  
+                  <h4><span> * </span> Masukkan Email Anda </h4>
+                  <input type="text" placeholder="Email">
+                  
+                  <h4><span> * </span> Masukkan Password Anda </h4>
+                  <input type="password" placeholder="Password">
+                  
+                  <script>
+                     function akun() {
+                        alert("Selamat! Akun Anda Telah Dibuat.")
+                     }
+                  </script>
 
-               <p class="form"> Pilih Tanggal Lahir Anda </p>
-               <select id="tanggal">
-                  <option> 1 </option>
-                  <option> 2 </option>
-                  <option> 3 </option>
-                  <option> 4 </option>
-                  <option> 5 </option>
-                  <option> 6 </option>
-                  <option> 7 </option>
-                  <option> 8 </option>
-                  <option> 9 </option>
-                  <option> 10 </option>
-                  <option> 11 </option>
-                  <option> 12 </option>
-                  <option> 13 </option>
-                  <option> 14 </option>
-                  <option> 15 </option>
-                  <option> 16 </option>
-                  <option> 17 </option>
-                  <option> 18 </option>
-                  <option> 19 </option>
-                  <option> 20 </option>
-                  <option> 21 </option>
-                  <option> 22 </option>
-                  <option> 23 </option>
-                  <option> 24 </option>
-                  <option> 25 </option>
-                  <option> 26 </option>
-                  <option> 27 </option>
-                  <option> 28 </option>
-                  <option> 29 </option>
-                  <option> 30 </option>
-                  <option> 31 </option>
-               </select>
-
-               <select id="bulan">
-                  <option> Januari </option>
-                  <option> Februari </option>
-                  <option> Maret </option>
-                  <option> April </option>
-                  <option> Mei </option>
-                  <option> Juni </option>
-                  <option> Juli </option>
-                  <option> Agustus </option>
-                  <option> September </option>
-                  <option> Oktober </option>
-                  <option> November </option>
-                  <option> Desember </option>
-               </select>
-
-               <select id="tahun">
-                  <option> 1960 </option>
-                  <option> 1961 </option>
-                  <option> 1962 </option>
-                  <option> 1963 </option>
-                  <option> 1964 </option>
-                  <option> 1965 </option>
-                  <option> 1966 </option>
-                  <option> 1967 </option>
-                  <option> 1968 </option>
-                  <option> 1969 </option>
-                  <option> 1970 </option>
-                  <option> 1971 </option>
-                  <option> 1972 </option>
-                  <option> 1973 </option>
-                  <option> 1974 </option>
-                  <option> 1975 </option>
-                  <option> 1976 </option>
-                  <option> 1977 </option>
-                  <option> 1978 </option>
-                  <option> 1979 </option>
-                  <option> 1980 </option>
-                  <option> 1981 </option>
-                  <option> 1982 </option>
-                  <option> 1983 </option>
-                  <option> 1984 </option>
-                  <option> 1985 </option>
-                  <option> 1986 </option>
-                  <option> 1987 </option>
-                  <option> 1988 </option>
-                  <option> 1989 </option>
-                  <option> 1990 </option>
-                  <option> 1991 </option>
-                  <option> 1992 </option>
-                  <option> 1993 </option>
-                  <option> 1994 </option>
-                  <option> 1995 </option>
-                  <option> 1996 </option>
-                  <option> 1997 </option>
-                  <option> 1998 </option>
-                  <option> 1999 </option>
-                  <option> 2000 </option>
-                  <option> 2001 </option>
-                  <option> 2002 </option>
-                  <option> 2003 </option>
-                  <option> 2004 </option>
-                  <option> 2005 </option>
-                  <option> 2006 </option>
-                  <option> 2007 </option>
-                  <option> 2008 </option>
-                  <option> 2009 </option>
-                  <option> 2010 </option>
-                  <option> 2011 </option>
-                  <option> 2012 </option>
-                  <option> 2013 </option>
-                  <option> 2014 </option>
-                  <option> 2015 </option>
-                  <option> 2016 </option>
-                  <option> 2017 </option>
-                  <option> 2018 </option>
-                  <option> 2019 </option>
-                  <option> 2020 </option>
-                  <option> 2021 </option>
-                  <option> 2022 </option>
-                  <option> 2023 </option>
-               </select>
-
-               <p class="form"> Pilih Jenis Kelamin Anda </p>
-               <input type="radio" id="pria" name="jenis kelamin"><label for="pria"> Pria </label>
-               <br>
-               <input type="radio" id="wanita" name="jenis kelamin"><label for="wanita"> Wanita </label>
-
-               <p class="form"> Masukkan Email Anda </p>
-               <input type="text" id="email">
-
-               <p class="form"> Masukkan Password Anda </p>
-               <input type="password" id="password">
-
-               <br><br><br>
-
-               <script>
-                  function akun() {
-                     alert("Selamat! Akun Anda Telah Sukses Dibuat.")
-                  }
-               </script>
-
-               <button type="submit" id="submit" onclick="akun()"> Konfirmasi </button>
-
-               <button type="reset" id="reset"> Isi Ulang </button>
-            </form>
+                  <div class="button">
+                     <button type="submit" id="submit" onclick="akun()"> Konfirmasi </button>
+                     <button type="reset" id="reset"> Isi Ulang </button>
+                  </div>
+               </form>
+            </div>
          </div>
-
+   
          <div class="right">
-            <h3>
-               <marquee behavior="scroll" direction="up" scrolldelay="750"> BUKU TERPOPULER </marquee>
-            </h3>
+            <h2> POPULER </h2>
             <ul>
-               <li><a href="Web Design.html"> Web Design </a></li>
-               <li><a href="Pemrograman.html"> Pemrograman </a></li>
-               <li><a href="Database.html"> Database </a></li>
-               <li><a href="Jaringan.html"> Jaringan </a></li>
-               <li><a href="Editing.html"> Editing </a></li>
+               <li><a href="#"> Desain Web </a></li>
+               <li><a href="#"> Pemrograman </a></li>
+               <li><a href="#"> Database </a></li>
+               <li><a href="#"> Jaringan </a></li>
+               <li><a href="#"> Editing </a></li>
+               <li><a href="#"> Teknologi </a></li>
+               <li><a href="#"> Matematika </a></li>
+               <li><a href="#"> Bahasa Inggris </a></li>
             </ul>
-
-            <br>
-
-            <h3 id="right">
-               <marquee behavior="scroll" direction="up" scrolldelay="750"> BUKU LAINNYA </marquee>
-            </h3>
-            <ul>
-               <li><a href="Matematika.html"> Matematika </a></li>
-               <li><a href="Bahasa Inggris.html"> Bahasa Inggris </a></li>
-               <li><a href="Teknologi.html"> Teknologi </a></li>
-            </ul>
-
-            <br>
          </div>
       </div>
+   </main>
 
-      <div class="footer" id="footer">
-         <p> This Program Created by M. Revanza Yuzar (Revan). <br> Dibuat Pada : Selasa, 3 Januari 2023. <br>
-            Copyright© 2023 @revanzayuzar </p>
+   <footer>
+      <img src="img/unigha-logo.png" alt="Logo Unigha">
+      <div class="left">
+         <p id="judul"> Perpustakaan Unigha </p>
+         <p id="desainer"> Design by M. Revanza Yuzar </p>
       </div>
-   </div>
+
+      <div class="right">
+         <p id="kolab"> M. Revanza Yuzar | Universitas Jabal Ghafur </p>
+         <p id="copyright"> Copyright © 2023 </p>
+      </div>
+   </footer>
 </body>
 
 </html>

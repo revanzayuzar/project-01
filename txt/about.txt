@@ -1,0 +1,12 @@
+>> PROJECT - 01 | About
+
+Project Name : PERPUSTAKAAN UNIGHA (UNIVERSITAS JABAL GHAFUR)
+Created by : M. Revanza Yuzar (Revan)
+
+# Front-End
+# Van Project
+# M. Revanza Yuzar
+
+Copyright © 2023 M. Revanza Yuzar
+
+...
