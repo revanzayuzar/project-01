@@ -8,12 +8,8 @@
         background-size: 50%;
     }
 
-    .content .mid-01 a {
-        width: 70%;
-    }
-
-    .content .mid-02 form {
-        width: 90%;
+    .content .mid-account form {
+        width: 95%;
     }
 
 }
@@ -34,16 +30,21 @@
         font-size: 16px;
     }
 
-    .hero p#judul {
+    .hero p#title {
         font-size: 30px;
     }
 
-    .waktu {
+    .time {
         font-size: 15px;
     }
 
+    .content .mid-slot,
+    .content .mid-account {
+        padding: 50px 2%;
+    }
+
     .content h2 {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .content h3 {
@@ -54,15 +55,16 @@
         font-size: 13px;
     }
 
-    .content .mid-01 p {
+    .content .mid-content p {
         font-size: 15px;
     }
 
-    .content .mid-02 form {
+    .content .mid-account form {
         width: 100%;
     }
 
     footer .right {
+        align-items: center;
         width: 100%;
         margin-top: 25px;
     }
@@ -74,25 +76,21 @@
 @media (max-width: 768px) {
 
     body {
-        background-size: 60%;
+        background-size: 75%;
     }
 
     .content {
         justify-content: center;
-        padding-bottom: 0;
     }
 
     .content .left,
     .content .mid,
     .content .right {
         width: 90%;
-        margin-bottom: 75px;
-        padding: 50px 0;
     }
 
     .content h2 {
         width: 50%;
-        font-size: 22px;
     }
 
     .content a {
@@ -100,9 +98,9 @@
         font-size: 15px;
     }
 
-    .content .mid-01,
-    .content .mid-02 {
-        width: 80%;
+    .content .mid-slot,
+    .content .mid-account {
+        padding: 50px 5%;
     }
 
 }
@@ -124,11 +122,12 @@
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 550px) {
 
-    .content .mid-01,
-    .content .mid-02 {
-        width: 90%;
+    .content .left,
+    .content .mid,
+    .content .right {
+        width: 95%;
     }
 
 }
@@ -138,10 +137,10 @@
 @media (max-width: 500px) {
 
     body {
-        background-size: 80%;
+        background-size: 90%;
     }
 
-    .hero p#judul {
+    .hero p#title {
         font-size: 28px;
     }
 
@@ -151,41 +150,34 @@
         width: 100%;
     }
 
-    .content .mid-01,
-    .content .mid-02 {
-        width: 96%;
-    }
-
-    footer .left {
-        align-items: flex-start;
-        width: 100%;
-        margin-top: 25px;
-    }
-
-    footer .right {
-        align-items: flex-end;
-    }
-
 }
 
 
 
 @media (max-width: 450px) {
 
-    .content .mid-01 p {
-        letter-spacing: 0;
+    .content {
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
-    .content .mid-01 a {
-        width: 80%;
+    .content .mid-content a {
+        width: 75%;
+        margin-left: 25%;
+    }
+
+    .content .mid-slot,
+    .content .mid-account {
+        padding: 50px 2%;
     }
 
     footer {
         justify-content: flex-start;
     }
 
-    footer .right {
-        align-items: flex-start;
+    footer .left {
+        width: 100%;
+        margin-top: 25px;
     }
 
     footer p {
@@ -199,15 +191,23 @@
 
 @media (max-width: 425px) {
 
-    .content .mid-02 select {
+    .content h2 {
+        width: 55%;
+    }
+
+    .content a {
+        width: 75%;
+    }
+
+    .content .mid-account select {
         width: 45%;
     }
 
-    .content .mid-02 select.tahun {
+    .content .mid-account select.tahun {
         margin-top: 15px;
     }
 
-    .content .mid-02 .select {
+    .content .mid-account .select {
         justify-content: space-around;
     }
 
@@ -233,23 +233,19 @@
         font-size: 15px;
     }
 
-    .hero p#judul {
+    .hero p#title {
         font-size: 22px;
     }
 
-    .waktu {
-        flex-direction: column;
-    }
-
     .content h2 {
-        width: 60%;
+        width: 62%;
     }
 
     .content h3 {
         font-size: 16px;
     }
 
-    .content h3#terbaru {
+    .content h3.judul {
         padding-right: 10px;
     }
 
@@ -258,12 +254,7 @@
     }
 
     .content a {
-        width: 80%;
-    }
-
-    .content .mid-01,
-    .content .mid-02 {
-        width: 98%;
+        width: 82%;
     }
 
 }
@@ -272,24 +263,20 @@
 
 @media (max-width: 350px) {
 
-    header h1 {
-        font-size: 17px;
-    }
-
     footer img {
-        width: 75px;
+        width: 88px;
     }
 
     footer p {
-        font-size: 11px;
+        font-size: 12px;
     }
 
-    footer p#judul {
-        font-size: 16px;
+    footer p#title {
+        font-size: 18px;
     }
 
     footer p#desainer {
-        font-size: 15px;
+        font-size: 16px;
     }
 
 }

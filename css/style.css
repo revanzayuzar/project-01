@@ -9,9 +9,9 @@
    --primary-light: rgb(0, 0, 200);
    --primary-dark: rgb(0, 0, 50);
 
-   --secondary: rgb(225, 200, 0);
-   --secondary-light: rgb(250, 250, 0);
-   --secondary-dark: rgb(200, 150, 0);
+   --secondary: rgb(200, 175, 0);
+   --secondary-light: rgb(225, 200, 0);
+   --secondary-dark: rgb(175, 150, 0);
 
    --body-color: rgb(222, 222, 222);
    --header-color: rgba(0, 0, 0, 0.5);
@@ -112,7 +112,7 @@ header h1 {
    animation: ketik 3s steps(18) infinite;
 }
 
-.hero .usap {
+.hero .animasi {
    overflow: hidden;
 }
 
@@ -138,7 +138,7 @@ header h1 {
    }
 }
 
-.hero p#judul {
+.hero p#title {
    color: var(--secondary-light);
    font-size: 40px;
    font-weight: 700;
@@ -188,28 +188,39 @@ header h1 {
    animation-timing-function: ease-in-out;
 }
 
-.waktu {
+.plus {
+   height: 25vh;
+   background-color: var(--primary-light);
+}
+
+.time {
    display: flex;
    justify-content: space-evenly;
-   align-items: center;
+   flex-wrap: wrap;
    color: var(--secondary);
    background-color: var(--primary);
    font-size: 18px;
    font-weight: 400;
    letter-spacing: 1px;
-   padding: 10px 0;
+   padding: 10px;
+}
+
+.tanggal,
+.jam {
+   width: max-content;
 }
 
 .content {
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
-   padding: 75px 10px;
+   padding: 0 10px;
+   padding-top: 75px;
 }
 
-@keyframes left-right {
+@keyframes container {
    0% {
-      box-shadow: 0 0 15px var(--primary-light);
+      box-shadow: 0 0 15px black;
    }
 
    50% {
@@ -217,47 +228,37 @@ header h1 {
    }
 
    100% {
-      box-shadow: 0 0 15px var(--primary-light);
+      box-shadow: 0 0 15px black;
    }
 }
 
 .content .left,
-.content .right {
+.content .right,
+.content .mid-slot,
+.content .mid-account {
    width: 20%;
    background-color: var(--primary-dark);
-   padding-top: 25px;
-   border: 2px solid var(--secondary-light);
-   border-radius: 7px;
-   animation: left-right 3s infinite;
+   margin-bottom: 75px;
+   padding: 50px 1%;
+   border: 2px solid yellow;
+   border-radius: 10px;
+   animation: container 5s infinite;
    animation-timing-function: ease-in-out;
-}
-
-@keyframes mid {
-   0% {
-      box-shadow: 0 0 15px var(--secondary-light);
-   }
-
-   50% {
-      box-shadow: none;
-   }
-
-   100% {
-      box-shadow: 0 0 15px var(--secondary-light);
-   }
 }
 
 .content .mid {
    width: 58%;
-   background-color: var(--secondary-light);
-   padding-top: 25px;
-   border: 2px solid var(--primary-dark);
-   border-radius: 7px;
-   animation: mid 3s infinite;
-   animation-timing-function: ease-in-out;
+}
+
+.content .mid-slot,
+.content .mid-account {
+   width: 100%;
+   background-color: var(--secondary);
+   padding: 50px 5%;
 }
 
 @keyframes kedip-h2 {
-   25% {
+   40% {
       color: transparent;
    }
 
@@ -267,34 +268,26 @@ header h1 {
 }
 
 .content h2 {
-   width: 90%;
    color: var(--secondary-light);
-   font-size: 22px;
+   font-size: 25px;
    font-weight: 500;
    text-align: center;
    margin: auto;
    margin-bottom: 50px;
-   padding: 10px 0;
+   padding-bottom: 10px;
    border-bottom: 7px solid var(--secondary-light);
-   animation: kedip-h2 3s infinite;
-}
-
-@keyframes kedip-h2-mid {
-   25% {
-      color: transparent;
-   }
-
-   100% {
-      color: var(--primary-light);
-   }
+   animation: kedip-h2 1s infinite;
 }
 
 .content .mid h2 {
-   width: 100%;
-   color: var(--primary-light);
-   border-top: 7px solid var(--primary-light);
-   border-bottom: 7px solid var(--primary-light);
-   animation: kedip-h2-mid 3s infinite;
+   width: 85%;
+   background-color: var(--primary-dark);
+   margin: auto;
+   margin-bottom: 50px;
+   padding: 5px;
+   border: 2px solid var(--secondary-light);
+   border-radius: 100px;
+   animation: kedip-h2 1s infinite, container 5s ease-in-out infinite;
 }
 
 .content h3 {
@@ -309,15 +302,15 @@ header h1 {
    margin: auto;
 }
 
-.content h3#terbaru {
+.content h3.judul {
    overflow: hidden;
    white-space: nowrap;
    padding-right: 15px;
    border-right: 2px solid var(--text-primary);
-   animation: ketik 3s steps(32) infinite;
+   animation: ketik 3s steps(25) infinite;
 }
 
-@keyframes kedip-h3-daftar {
+@keyframes kedip-daftar {
    50% {
       color: transparent;
    }
@@ -329,7 +322,7 @@ header h1 {
 
 .content h3#daftar {
    color: var(--text-important);
-   animation: kedip-h3-daftar 0.7s infinite;
+   animation: kedip-daftar 0.7s infinite;
 }
 
 .content h4 {
@@ -350,7 +343,7 @@ header h1 {
 
 .content a {
    display: block;
-   width: 90%;
+   width: 100%;
    color: var(--color-before);
    background-color: var(--primary-dark);
    font-size: 15px;
@@ -373,50 +366,46 @@ header h1 {
    transition-duration: 0.25s;
 }
 
-.content .mid-01,
-.content .mid-02 {
-   width: 96%;
-   margin: auto;
-   margin-bottom: 75px;
-}
-
-.content .mid-01 img {
+.content .mid-content img {
    width: 100%;
    margin: 25px 0;
-   border: 1px solid black;
+   border: 5px solid black;
+   border-radius: 10px;
 }
 
-.content .mid-01 p {
+.content .mid-content p {
    color: var(--text-primary);
    font-size: 16px;
    font-weight: 400;
    text-align: justify;
-   letter-spacing: 1px;
+   text-indent: 0.7cm;
    line-height: 1.5;
+   margin-bottom: 15px;
 }
 
-.content .mid-01 a {
+.content .mid-content a {
    width: 50%;
    transform: scale(0.98);
-   margin-top: 25px;
+   margin-top: 50px;
+   margin-left: 45%;
 }
 
-.content .mid-01 a:hover {
+.content .mid-content a:hover {
    transform: scale(1);
    text-shadow: 0 0 20px var(--primary-light), 0 0 10px var(--primary-light);
    box-shadow: 0 0 25px var(--primary-light);
    transition-duration: 0.1s;
 }
 
-.content .mid-02 form {
-   width: 75%;
+.content .mid-account form {
+   width: 85%;
    margin: auto;
    margin-top: 50px;
 }
 
-.content .mid-02 input,
-.content .mid-02 select,
-.content .mid-02 button {
+.content .mid-account input,
+.content .mid-account select,
+.content .mid-account button {
    width: 100%;
    color: var(--color-before);
    background-color: var(--primary-dark);
@@ -428,22 +417,22 @@ header h1 {
    border-radius: 5px;
 }
 
-.content .mid-02 input:focus,
-.content .mid-02 select:focus {
+.content .mid-account input:focus,
+.content .mid-account select:focus {
    border-color: var(--color-focus);
 }
 
-.content .mid-02 select {
+.content .mid-account select {
    width: 32%;
 }
 
-.content .mid-02 .select {
+.content .mid-account .select {
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
 }
 
-.content .mid-02 input[type="radio"] {
+.content .mid-account input[type="radio"] {
    appearance: none;
    width: 25px;
    height: 25px;
@@ -452,62 +441,62 @@ header h1 {
    border-radius: 50%;
 }
 
-.content .mid-02 input[type="radio"]:checked {
+.content .mid-account input[type="radio"]:checked {
    background-color: var(--color-before);
    border-color: var(--primary-dark);
 }
 
-.content .mid-02 label {
+.content .mid-account label {
    font-size: 15px;
    font-weight: 500;
    letter-spacing: 0.5px;
 }
 
-.content .mid-02 label#pria {
+.content .mid-account label#pria {
    color: rgb(25, 25, 255);
 }
 
-.content .mid-02 label#wanita {
+.content .mid-account label#wanita {
    color: rgb(255, 25, 65);
 }
 
-.content .mid-02 .radio {
+.content .mid-account .radio {
    display: flex;
    justify-content: space-evenly;
 }
 
-.content .mid-02 .item {
+.content .mid-account .item {
    display: flex;
    align-items: center;
 }
 
-.content .mid-02 button {
+.content .mid-account button {
    width: 40%;
    padding: 10px;
    border-radius: 25px;
 }
 
-.content .mid-02 button#submit {
+.content .mid-account button#submit {
    background-color: rgb(0, 0, 255);
 }
 
-.content .mid-02 button#submit:hover {
+.content .mid-account button#submit:hover {
    background-color: rgb(0, 0, 175);
    box-shadow: 0 0 25px blue;
    transition: 0.15s;
 }
 
-.content .mid-02 button#reset {
+.content .mid-account button#reset {
    background-color: rgb(255, 0, 0);
 }
 
-.content .mid-02 button#reset:hover {
+.content .mid-account button#reset:hover {
    background-color: rgb(175, 0, 0);
    box-shadow: 0 0 25px red;
    transition: 0.15s;
 }
 
-.content .mid-02 .button {
+.content .mid-account .button {
    display: flex;
    justify-content: space-evenly;
    margin-top: 50px;
@@ -520,8 +509,8 @@ footer {
    flex-wrap: wrap;
    width: 100%;
    background-color: var(--footer-color);
-   padding: 25px;
-   border-top: 2px solid var(--secondary-light);
+   padding: 25px 10px;
+   border-top: 2px solid var(--secondary);
 }
 
 footer img {
@@ -534,8 +523,12 @@ footer .left,
 footer .right {
    display: flex;
    flex-direction: column;
-   align-items: center;
+   align-items: flex-start;
    width: max-content;
+}
+
+footer .right {
+   align-items: flex-end;
 }
 
 footer p {
@@ -546,7 +539,7 @@ footer p {
    margin-bottom: 10px;
 }
 
-footer p#judul {
+footer p#title {
    font-size: 20px;
    font-weight: 500;
    text-transform: uppercase;
