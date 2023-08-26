@@ -22,6 +22,10 @@
         font-size: 20px;
     }
 
+    nav {
+        width: 43%;
+    }
+
     .hero {
         justify-content: space-around;
     }
@@ -40,7 +44,7 @@
 
     .content .mid-slot,
     .content .mid-account {
-        padding: 50px 2%;
+        padding: 75px 2%;
     }
 
     .content h2 {
@@ -100,7 +104,7 @@
 
     .content .mid-slot,
     .content .mid-account {
-        padding: 50px 5%;
+        padding: 75px 5%;
     }
 
 }
@@ -118,6 +122,22 @@
         margin-bottom: 25px;
     }
 
+}
+
+
+
+@media (max-width: 675px) {
+
+    nav {
+        justify-content: space-evenly;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: auto;
+        background-color: var(--primary-dark);
+        padding: 7px 15px;
+    }
 }
 
 
@@ -223,6 +243,10 @@
 
     header h1 {
         font-size: 18px;
+    }
+
+    nav {
+        justify-content: space-around;
     }
 
     .hero img {
