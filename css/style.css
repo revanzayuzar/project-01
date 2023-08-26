@@ -109,7 +109,7 @@ nav img {
    right: 0;
    bottom: 0;
    z-index: 999;
-   background-color: rgb(222, 222, 222);
+   background-color: rgb(200, 200, 200);
    animation: loading-bg 5s;
    animation-timing-function: ease-in-out;
    animation-iteration-count: 1;

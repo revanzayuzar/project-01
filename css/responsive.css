@@ -160,6 +160,10 @@
         background-size: 90%;
     }
 
+    nav {
+        justify-content: space-around;
+    }
+
     .hero p#title {
         font-size: 28px;
     }
@@ -188,7 +192,7 @@
 
     .content .mid-slot,
     .content .mid-account {
-        padding: 50px 2%;
+        padding: 75px 2%;
     }
 
     footer {
@@ -243,10 +247,6 @@
 
     header h1 {
         font-size: 18px;
-    }
-
-    nav {
-        justify-content: space-around;
     }
 
     .hero img {
