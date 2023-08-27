@@ -5,19 +5,19 @@
 
 
 // Untuk menghentikan loading
-document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(function() {
-        document.body.classList.add("finish");
-    }, 5000);
-});
+setTimeout(function() {
+    let divLoading = document.querySelector(".loading");
+    divLoading.classList.remove("loading");
+    divLoading.classList.add("finish");
+}, 5000);
 
 
 
 // Untuk menyapa user/pengguna
 function sapaUser() {
-    alert("Selamat Datang Di Perpustakaan Unigha")
-    let namaUser = prompt("Siapakah Nama Anda?")
-    alert("Hai " + namaUser + "! Semoga Harimu Menyenangkan")
+    alert("Selamat Datang Di Perpustakaan Unigha");
+    let namaUser = prompt("Siapakah Nama Anda?");
+    alert("Hai " + namaUser + "! Semoga Harimu Menyenangkan");
 }
 
 
@@ -67,5 +67,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Untuk notifikasi pembuatan akun
 function buatAkun() {
-    alert("Selamat! Akun Anda Telah Dibuat.")
+    alert("Selamat! Akun Anda Telah Dibuat.");
 }

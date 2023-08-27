@@ -196,6 +196,10 @@
         padding: 75px 2%;
     }
 
+    .content .mid-account form {
+        width: 94%;
+    }
+
     footer {
         justify-content: flex-start;
     }
@@ -215,6 +219,10 @@
 
 
 @media (max-width: 425px) {
+
+    .hero p#title {
+        font-size: 26px;
+    }
 
     .content h2 {
         width: 55%;
@@ -248,10 +256,6 @@
 
     header h1 {
         font-size: 18px;
-    }
-
-    .hero img {
-        width: 275px;
     }
 
     .hero p {

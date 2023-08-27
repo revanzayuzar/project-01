@@ -99,14 +99,12 @@ nav img:active {
 }
 
 @keyframes loading-bg {
-   80% {
+   70% {
       opacity: 1;
    }
 
    100% {
       opacity: 0;
-      display: none;
-      visibility: hidden;
    }
 }
 
@@ -123,9 +121,7 @@ nav img:active {
    bottom: 0;
    z-index: 999;
    background-color: var(--secondary);
-   animation: loading-bg 5s;
-   animation-timing-function: ease-in-out;
-   animation-iteration-count: 1;
+   animation: loading-bg 5s ease-out;
 }
 
 @keyframes loading-logo {
@@ -137,7 +133,7 @@ nav img:active {
       opacity: 1;
    }
 
-   65% {
+   60% {
       opacity: 1;
       transform: scale(1.05);
       filter: drop-shadow(0 0 11px black);
@@ -145,21 +141,41 @@ nav img:active {
 
    100% {
       opacity: 0;
-      display: none;
-      visibility: hidden;
+      transform: scale(1.03);
+      filter: drop-shadow(0 0 5px black);
    }
 }
 
 .loading img {
    width: 200px;
-   animation: loading-logo 5s;
-   animation-timing-function: ease-in-out;
-   animation-iteration-count: 1;
+   animation: loading-logo 5s ease-out;
 }
 
-.finish .loading {
+@keyframes loading-design {
+   70% {
+      opacity: 1;
+   }
+
+   100% {
+      opacity: 0;
+   }
+}
+
+.loading p {
+   position: fixed;
+   bottom: 36px;
+   right: 36px;
+   color: var(--text-primary);
+   font-size: 16px;
+   font-weight: 300;
+   letter-spacing: 0.5px;
+   animation: loading-design 5s ease-out;
+}
+
+.finish {
+   animation: none;
    display: none;
-   visibility: hidden;
+   opacity: 0;
 }
 
 .hero {
@@ -275,7 +291,7 @@ nav img:active {
 }
 
 .hero img {
-   width: 300px;
+   width: 275px;
    filter: drop-shadow(0 0 50px white);
    animation: melayang 6s infinite;
    animation-timing-function: ease-in-out;
