@@ -5,13 +5,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-   --primary: rgb(0, 0, 125);
-   --primary-light: rgb(0, 0, 200);
+   --primary: rgb(0, 0, 100);
+   --primary-light: rgb(0, 0, 150);
    --primary-dark: rgb(0, 0, 50);
 
    --secondary: rgb(200, 175, 0);
    --secondary-light: rgb(225, 200, 0);
    --secondary-dark: rgb(175, 150, 0);
+
+   --invert-primary: rgb(255, 255, 155);
+   --invert-primary-light: rgb(255, 255, 105);
 
    --body-color: rgb(222, 222, 222);
    --header-color: rgba(0, 0, 0, 0.5);
@@ -83,17 +86,27 @@ nav {
 }
 
 nav img {
-   width: 30px;
+   width: 33px;
+   background-color: var(--invert-primary);
    filter: invert(1);
+   padding: 0 1.5px;
+   border-radius: 3px;
+}
+
+nav img:hover,
+nav img:active {
+   background-color: var(--invert-primary-light);
 }
 
 @keyframes loading-bg {
-   70% {
+   80% {
       opacity: 1;
    }
 
    100% {
       opacity: 0;
+      display: none;
+      visibility: hidden;
    }
 }
 
@@ -109,7 +122,7 @@ nav img {
    right: 0;
    bottom: 0;
    z-index: 999;
-   background-color: rgb(200, 200, 200);
+   background-color: var(--secondary);
    animation: loading-bg 5s;
    animation-timing-function: ease-in-out;
    animation-iteration-count: 1;
@@ -124,14 +137,16 @@ nav img {
       opacity: 1;
    }
 
-   70% {
+   65% {
       opacity: 1;
       transform: scale(1.05);
-      filter: drop-shadow(0 0 20px black);
+      filter: drop-shadow(0 0 11px black);
    }
 
    100% {
       opacity: 0;
+      display: none;
+      visibility: hidden;
    }
 }
 
@@ -144,6 +159,7 @@ nav img {
 
 .finish .loading {
    display: none;
+   visibility: hidden;
 }
 
 .hero {
@@ -282,9 +298,10 @@ nav img {
    padding: 10px;
 }
 
-.tanggal,
-.jam {
+#tanggal,
+#jam {
    width: max-content;
+   text-align: center;
 }
 
 .content {
