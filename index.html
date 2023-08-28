@@ -4,9 +4,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
+   <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
    <link rel="icon" href="img/logo/unigha-logo.png">
@@ -17,328 +18,355 @@
 </head>
 
 <body>
-   <header>
-      <a href="#">
-         <img src="img/logo/unigha-logo.png" alt="Logo Unigha" title="Logo Unigha">
-      </a>
-      <h1> PERPUSTAKAAN UNIGHA </h1>
-   </header>
+   <div class="container fixed">
+      <header>
+         <a href="#">
+            <img src="img/logo/unigha-logo.png" alt="Logo Unigha" title="Logo Unigha">
+         </a>
+         <h1> PERPUSTAKAAN UNIGHA </h1>
+      </header>
+   
+      <nav>
+         <a href="#beranda"><img src="img/icon/home.png" alt="Beranda" title="Beranda"></a>
+         <a href="#menu"><img src="img/icon/menu.png" alt="Menu" title="Menu"></a>
+         <a href="#terbaru"><img src="img/icon/article.png" alt="Terbaru" title="Terbaru"></a>
+         <a href="#buat-akun"><img src="img/icon/no-account.png" alt="Buat Akun" title="Buat Akun"></a>
+         <a href="#populer"><img src="img/icon/trending.png" alt="Populer" title="Populer"></a>
+      </nav>
+   
+      <main>
+         <div class="loading" id="loading">
+            <img src="img/logo/unigha-logo.png" alt="Logo Unigha">
+            <p> Design by Revan </p>
+         </div>
+   
+         <div class="hero" id="beranda">
+            <div class="text">
+               <div class="ketik">
+                  <p id="welcome"> SELAMAT DATANG DI </p>
+               </div>
+               <div class="animasi">
+                  <p id="title"> PERPUSTAKAAN UNIGHA </p>
+               </div>
+               <p id="unigha"> Universitas Jabal Ghafur </p>
+            </div>
+            <img src="img/logo/unigha-logo.png" alt="Logo Unigha" onclick="sapaUser()">
+         </div>
+   
+         <div class="plus"></div>
+   
+         <div class="time">
+            <div class="tanggal" id="tanggal"></div>
+            <div class="jam" id="jam"></div>
+         </div>
+   
+         <div class="content">
+            <div class="left" id="menu">
+               <h2> MENU </h2>
+               <ul>
+                  <li><a href="#"> Login </a></li>
+                  <li><a href="#"> Daftar Buku </a></li>
+                  <li><a href="#"> Berita </a></li>
+                  <li><a href="#"> Layanan </a></li>
+                  <li><a href="#"> Komunitas </a></li>
+                  <li><a href="#"> Bantuan </a></li>
+                  <li><a href="#"> Masukan </a></li>
+                  <li><a href="#"> Tentang </a></li>
+               </ul>
+            </div>
+      
+            <div class="mid">
+               <div class="mid-content" id="terbaru">
+                  <div class="mid-slot">
+                     <h2> TERBARU </h2>
+                     <div class="ketik">
+                        <h3 class="judul"> Apa Itu Website? </h3>
+                     </div>
+                     <img src="img/content/website.jpg" alt="Website">
+                     <p class="posting"><span> Di Posting Pada : </span> 26 Agustus 2023 | <span> Oleh : </span> Revan </p>
+                     <p> Sebuah website adalah wadah daring yang terdiri dari berbagai halaman terkait yang dapat diakses melalui internet. Setiap halaman ini memiliki tujuan dan isi yang berbeda, namun tetap mempertahankan keseragaman dalam desain, tata letak, dan tema keseluruhan. Melalui kombinasi elemen-elemen seperti halaman web, tautan, navigasi, dan konten, website memberikan platform untuk berbagai tujuan, mulai dari menyajikan informasi, berbagi konten multimedia, hingga menjual produk atau layanan. </p>
+                     <p> Website berfungsi sebagai entitas yang terdiri dari halaman-halaman unik yang memiliki alamat sendiri (URL). Pengguna dapat berpindah antara halaman-halaman ini dengan bantuan tautan atau hyperlink. Navigasi, yang umumnya terletak di bagian atas atau samping halaman, memandu pengunjung dalam menjelajahi berbagai informasi yang disajikan. </p>
+                     <p> Konten, dalam bentuk teks, gambar, audio, video, dan elemen lainnya, merupakan inti dari website. Konten ini menyampaikan pesan dan informasi kepada pengunjung. Desain dan tata letak yang baik memainkan peran penting dalam presentasi konten dengan cara yang estetis, mudah dibaca, dan nyaman bagi pengguna. </p>
+                     <p> Pengaturan visual elemen-elemen dalam halaman web dilakukan melalui CSS (Cascading Style Sheets), yang mengontrol aspek tampilan seperti warna, jenis font, dan tata letak. Selain itu, JavaScript digunakan untuk memberikan interaktivitas pada website, seperti efek animasi, validasi formulir, dan respons terhadap tindakan pengguna. </p>
+                     <p> Website dihosting di server web, tempat semua file dan data yang diperlukan disimpan untuk menghasilkan halaman web kepada pengunjung. Domain, sebagai alamat unik, digunakan untuk mengakses website. Dari website pribadi hingga platform e-commerce yang kompleks, tujuan utama website adalah memberikan pengalaman bermanfaat, informatif, dan menarik bagi pengunjungnya di dunia digital. <br><br> ... </p>
+                     <a href="#"> Baca Selengkapnya >> </a>
+                  </div>
+   
+                  <div class="mid-slot">
+                     <h2> TERBARU </h2>
+                     <div class="ketik">
+                        <h3 class="judul"> Kombinasi Antara HTML & CSS </h3>
+                     </div>
+                     <img src="img/content/html&css.jpg" alt="HTML & CSS">
+                     <p class="posting"><span> Di Posting Pada : </span> 26 Agustus 2023 | <span> Oleh : </span> Revan </p>
+                     <p> HTML (HyperText Markup Language) adalah bahasa markah yang digunakan untuk membuat dan mengatur struktur konten di halaman web. HTML menggunakan elemen-elemen seperti tag dan atribut untuk memformat teks, gambar, video, tautan, dan elemen-elemen lainnya agar dapat diakses dan ditampilkan dengan benar oleh browser web. </p>
+                     <p> CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk mengatur tampilan dan gaya dari elemen-elemen yang diatur oleh HTML. CSS memungkinkan Anda mengubah warna, ukuran teks, tata letak, jarak antar elemen, dan lebih banyak lagi, untuk menciptakan desain visual yang menarik dan konsisten di seluruh halaman web. </p>
+                     <p> Kombinasi antara HTML dan CSS memungkinkan Anda untuk mengontrol bagaimana konten disusun dan ditampilkan. Misalnya, Anda bisa menggunakan tag-heading (h1 hingga h6) untuk memberi hierarki pada judul-judul di halaman Anda. Lalu, dengan menggunakan CSS, Anda dapat mengatur ukuran, jenis font, warna, dan margin dari judul-judul tersebut agar sesuai dengan desain yang Anda inginkan. </p>
+                     <p> Salah satu cara penerapan klasik dari kombinasi ini adalah dalam pembuatan tata letak "dua kolom". Anda bisa menggunakan elemen "div" untuk membuat kolom-kolom tersebut dalam HTML, lalu menggunakan CSS untuk mengatur lebar kolom, jarak antar kolom, dan tampilan lainnya. </p>
+                     <p> Secara keseluruhan, HTML dan CSS bekerja bersama untuk menciptakan pengalaman visual yang konsisten dan menarik di seluruh halaman web. HTML mengatur struktur dan konten, sementara CSS mengatur tampilan dan estetika. Dengan pemisahan ini, Anda dapat merancang ulang tampilan halaman tanpa harus mengubah struktur kontennya, atau sebaliknya. Ini mendorong praktik pengembangan yang efisien dan memungkinkan pemeliharaan yang lebih mudah pada jangka panjang. <br><br> ... </p>
+                     <a href="#"> Baca Selengkapnya >> </a>
+                  </div>
+   
+                  <div class="mid-slot">
+                     <h2> TERBARU </h2>
+                     <div class="ketik">
+                        <h3 class="judul"> Tutorial JavaScript Dasar </h3>
+                     </div>
+                     <img src="img/content/javascript.jpg" alt="JavaScript">
+                     <p class="posting"><span> Di Posting Pada : </span> 26 Agustus 2023 | <span> Oleh : </span> Revan </p>
+                     <p> JavaScript adalah bahasa pemrograman yang memiliki peran krusial dalam menghidupkan halaman web. Dengan JavaScript, pengembang dapat memberikan elemen-elemen interaktif dan dinamis pada halaman web, memungkinkan pengguna untuk berinteraksi lebih jauh daripada sekadar melihat konten statis. Hal ini dicapai dengan mengontrol elemen HTML dan merespons tindakan pengguna seperti klik tombol, pengisian formulir, atau pergerakan mouse. Dengan adanya JavaScript, kita dapat menciptakan pengalaman pengguna yang lebih menarik, responsif, dan intuitif. </p>
+                     <p> Salah satu keunggulan penting JavaScript adalah kemampuannya untuk mengubah konten di halaman web tanpa harus memuat ulang halaman itu sendiri. Ini memungkinkan pembuatan aplikasi yang bekerja secara real-time, seperti panel komentar yang muncul setelah pengguna menulis komentar atau konten yang diperbarui saat pengguna melakukan scroll. Fitur ini meningkatkan kenyamanan dan efisiensi pengguna dalam menjelajahi serta berinteraksi dengan website. </p>
+                     <p> Selain itu, JavaScript memungkinkan kita membuat animasi yang menarik di halaman web. Dengan mengatur perubahan nilai-nilai tertentu pada elemen dalam interval waktu tertentu, kita dapat menciptakan efek animasi seperti pergeseran, pemberhentian, atau pelayangan elemen-elemen tersebut. Ini memberikan dimensi tambahan kepada tampilan website, meningkatkan daya tarik visual dan membantu menyampaikan pesan dengan lebih efektif. </p>
+                     <p> JavaScript juga memainkan peran penting dalam pengembangan single-page applications (SPA). Dalam model ini, website bekerja seperti aplikasi yang mengubah konten tanpa memuat ulang halaman. Ini menciptakan pengalaman pengguna yang mulus dan responsif, mirip dengan penggunaan aplikasi desktop. SPA menggunakan JavaScript untuk mengelola transisi antara tampilan yang berbeda, memungkinkan navigasi cepat dan lancar. </p>
+                     <p> Dengan komunitas pengembang yang besar dan dukungan dari berbagai framework dan library seperti React, Angular, dan Vue.js, JavaScript menjadi landasan untuk pengalaman modern di web. Dari elemen-elemen interaktif hingga aplikasi web yang kompleks, JavaScript tetap menjadi bahasa yang penuh daya untuk membangun pengalaman web yang menarik dan fungsional. <br><br> ... </p>
+                     <a href="#"> Baca Selengkapnya >> </a>
+                  </div>
 
-   <nav>
-      <a href="#beranda"><img src="img/icon/home.png" alt="Beranda" title="Beranda"></a>
-      <a href="#menu"><img src="img/icon/menu.png" alt="Menu" title="Menu"></a>
-      <a href="#terbaru"><img src="img/icon/article.png" alt="Terbaru" title="Terbaru"></a>
-      <a href="#buat-akun"><img src="img/icon/no-account.png" alt="Buat Akun" title="Buat Akun"></a>
-      <a href="#populer"><img src="img/icon/trending.png" alt="Populer" title="Populer"></a>
-   </nav>
+                  <div class="mid-slot">
+                     <h2> TERBARU </h2>
+                     <div class="ketik">
+                        <h3 class="judul"> Tren Teknologi Informasi  </h3>
+                     </div>
+                     <img src="img/content/teknologi-informasi.jpg" alt="Teknologi Informasi">
+                     <p class="posting"><span> Di Posting Pada : </span> 28 Agustus 2023 | <span> Oleh : </span> Revan </p>
+                     <p class="sub-judul"> 1. Kecepatan 5G dan Mobilitas Terhubung </p>
+                     <p> Tren teknologi informasi yang semakin mendominasi adalah pengenalan jaringan 5G yang menghadirkan konektivitas super cepat. Dengan kecepatan yang jauh melebihi 4G, 5G memungkinkan transfer data instan dan lancar, membuka pintu bagi pengembangan layanan berbasis cloud, Internet of Things (IoT), dan realitas virtual/augmented. Perangkat-perangkat yang terhubung dengan jaringan 5G, seperti mobil otonom dan perangkat IoT, akan mengubah cara kita berinteraksi dengan lingkungan di sekitar kita. </p>
+                     <p class="sub-judul"> 2. Kecerdasan Buatan (AI) dalam Semua Aspek </p>
+                     <p> Penerapan kecerdasan buatan semakin meluas ke berbagai industri, mulai dari kesehatan dan keuangan hingga manufaktur dan hiburan. Teknologi ini memungkinkan sistem untuk belajar dari data dan membuat keputusan yang cerdas tanpa campur tangan manusia. Dari chatbot yang membantu layanan pelanggan hingga analisis data mendalam untuk prediksi bisnis, AI mengubah cara kita berinteraksi dengan teknologi dan meningkatkan efisiensi operasional. </p>
+                     <p class="sub-judul"> 3. Privasi dan Keamanan Data yang Ditingkatkan </p>
+                     <p> Dengan semakin banyaknya data yang dihasilkan dan dikumpulkan, perlindungan privasi dan keamanan data semakin menjadi perhatian utama. Undang-undang seperti GDPR (General Data Protection Regulation) di Eropa dan peraturan serupa di berbagai negara menegaskan pentingnya pengelolaan data yang aman dan transparan. Perusahaan dan pengembang perangkat lunak harus meningkatkan upaya mereka dalam melindungi data pengguna dan menghadirkan solusi keamanan yang inovatif. </p>
+                     <p class="sub-judul"> 4. Cloud Computing Mengubah Infrastruktur Bisnis </p>
+                     <p> Komputasi awan (cloud computing) terus mengubah cara perusahaan menyimpan, mengelola, dan mengakses data. Bisnis dapat menghemat biaya infrastruktur dan meningkatkan fleksibilitas dengan menggunakan layanan cloud. Infrastruktur cloud juga mendukung skalabilitas yang cepat, memungkinkan perusahaan menyesuaikan sumber daya sesuai kebutuhan. </p>
+                     <p class="sub-judul"> 5. Perangkat Internet of Things (IoT) Menyatu dalam Kehidupan Sehari-hari </p>
+                     <p> Internet of Things (IoT) terus merangkak masuk ke berbagai aspek kehidupan kita. Mulai dari perangkat rumah tangga pintar hingga sensor yang memantau kualitas udara di kota, IoT mengumpulkan data dari lingkungan sekitar dan membantu mengoptimalkan berbagai proses. Namun, tantangan seputar privasi dan keamanan terus diatasi untuk memastikan adopsi yang berkelanjutan. </p>
+                     <p> Dengan tren ini, dunia teknologi informasi terus berkembang dan mengubah cara kita berinteraksi dengan teknologi serta mempengaruhi berbagai aspek kehidupan kita. <br><br> ... </p>
+                     <a href="#"> Baca Selengkapnya >> </a>
+                  </div>
 
-   <main>
-      <div class="loading">
+                  <div class="mid-slot">
+                     <h2> TERBARU </h2>
+                     <div class="ketik">
+                        <h3 class="judul"> Pengembangan Website </h3>
+                     </div>
+                     <img src="img/content/pengembangan-website.jpg" alt="Pengembangan Website">
+                     <p class="posting"><span> Di Posting Pada : </span> 28 Agustus 2023 | <span> Oleh : </span> Revan </p>
+                     <p class="sub-judul"> 1. Tahap Perencanaan yang Kritis </p>
+                     <p> Pengembangan website yang sukses dimulai dengan tahap perencanaan yang matang. Langkah ini melibatkan identifikasi tujuan utama website, audiens target, serta konten yang akan disajikan. Pemilihan platform, tata letak, dan fitur-fitur khusus juga harus dipertimbangkan dalam tahap ini. Dengan merencanakan secara cermat, website memiliki landasan yang kokoh untuk mencapai tujuan bisnis dan memenuhi harapan pengguna. </p>
+                     <p class="sub-judul"> 2. Desain Visual yang Menarik dan Responsif </p>
+                     <p> Aspek desain visual memainkan peran krusial dalam pengembangan website. Desain yang menarik, sesuai dengan identitas merek, dan mudah dinavigasi akan meningkatkan pengalaman pengguna. Selain itu, desain responsif juga penting agar website terlihat dan berfungsi dengan baik di berbagai perangkat, mulai dari layar desktop hingga ponsel pintar. </p>
+                     <p class="sub-judul"> 3. Pengembangan Kode yang Efisien </p>
+                     <p> Pada tahap pengembangan, tim pengembang akan menciptakan kode yang menjadikan desain dan fitur website menjadi nyata. Penggunaan bahasa pemrograman dan teknologi yang tepat akan mempengaruhi performa dan kecepatan website. Selain itu, pengembang juga harus memastikan kode yang dihasilkan sesuai dengan standar terbaru dan aman dari celah keamanan. </p>
+                     <p class="sub-judul"> 4. Integrasi Fungsionalitas dan Konten </p>
+                     <p> Website harus lebih dari sekadar tampilan; fungsionalitasnya harus mendukung tujuan bisnis. Ini termasuk integrasi formulir kontak, fitur e-commerce, alat pencarian, dan platform media sosial. Konten yang relevan dan berkualitas juga perlu diintegrasikan, termasuk teks, gambar, video, dan elemen multimedia lainnya. </p>
+                     <p class="sub-judul"> 5. Pengujian dan Peluncuran </p>
+                     <p> Sebelum diluncurkan secara resmi, website harus melewati tahap pengujian menyeluruh. Tes fungsional, kompatibilitas lintas perangkat, kecepatan loading, dan responsivitas harus diperiksa. Setelah website terbukti bekerja dengan baik, barulah dilakukan peluncuran. Upaya peluncuran melibatkan pengaturan hosting, pemutakhiran DNS, dan pengumuman publik. </p>
+                     <p> Dengan mengikuti langkah-langkah ini, pengembangan website dapat dijalankan dengan lebih terstruktur dan menghasilkan situs web yang menarik, fungsional, dan sesuai dengan tujuan yang ditetapkan. <br><br> ... </p>
+                     <a href="#"> Baca Selengkapnya >> </a>
+                  </div>
+               </div>
+
+               <div class="mid-account" id="buat-akun">
+                  <h2> BUAT AKUN </h2>
+                  <h3> Belum Memiliki Akun?? </h3>
+                  <h3 id="daftar"> Daftar Sekarang! </h3>
+
+                  <form action="#">
+                     <h4><span> * </span> Masukkan Nama Anda </h4>
+                     <input type="text" placeholder="Nama">
+      
+                     <h4><span> * </span> Pilih Tanggal Lahir Anda </h4>
+                     <div class="select">
+                        <select class="tanggal">
+                           <option> * Tanggal </option>
+                           <option> 1 </option>
+                           <option> 2 </option>
+                           <option> 3 </option>
+                           <option> 4 </option>
+                           <option> 5 </option>
+                           <option> 6 </option>
+                           <option> 7 </option>
+                           <option> 8 </option>
+                           <option> 9 </option>
+                           <option> 10 </option>
+                           <option> 11 </option>
+                           <option> 12 </option>
+                           <option> 13 </option>
+                           <option> 14 </option>
+                           <option> 15 </option>
+                           <option> 16 </option>
+                           <option> 17 </option>
+                           <option> 18 </option>
+                           <option> 19 </option>
+                           <option> 20 </option>
+                           <option> 21 </option>
+                           <option> 22 </option>
+                           <option> 23 </option>
+                           <option> 24 </option>
+                           <option> 25 </option>
+                           <option> 26 </option>
+                           <option> 27 </option>
+                           <option> 28 </option>
+                           <option> 29 </option>
+                           <option> 30 </option>
+                           <option> 31 </option>
+                        </select>
+                     
+                        <select class="bulan">
+                           <option> * Bulan </option>
+                           <option> Januari </option>
+                           <option> Februari </option>
+                           <option> Maret </option>
+                           <option> April </option>
+                           <option> Mei </option>
+                           <option> Juni </option>
+                           <option> Juli </option>
+                           <option> Agustus </option>
+                           <option> September </option>
+                           <option> Oktober </option>
+                           <option> November </option>
+                           <option> Desember </option>
+                        </select>
+                     
+                        <select class="tahun">
+                           <option> * Tahun </option>
+                           <option> 1945 </option>
+                           <option> 1946 </option>
+                           <option> 1947 </option>
+                           <option> 1948 </option>
+                           <option> 1949 </option>
+                           <option> 1950 </option>
+                           <option> 1951 </option>
+                           <option> 1952 </option>
+                           <option> 1953 </option>
+                           <option> 1954 </option>
+                           <option> 1955 </option>
+                           <option> 1956 </option>
+                           <option> 1957 </option>
+                           <option> 1958 </option>
+                           <option> 1959 </option>
+                           <option> 1960 </option>
+                           <option> 1961 </option>
+                           <option> 1962 </option>
+                           <option> 1963 </option>
+                           <option> 1964 </option>
+                           <option> 1965 </option>
+                           <option> 1966 </option>
+                           <option> 1967 </option>
+                           <option> 1968 </option>
+                           <option> 1969 </option>
+                           <option> 1970 </option>
+                           <option> 1971 </option>
+                           <option> 1972 </option>
+                           <option> 1973 </option>
+                           <option> 1974 </option>
+                           <option> 1975 </option>
+                           <option> 1976 </option>
+                           <option> 1977 </option>
+                           <option> 1978 </option>
+                           <option> 1979 </option>
+                           <option> 1980 </option>
+                           <option> 1981 </option>
+                           <option> 1982 </option>
+                           <option> 1983 </option>
+                           <option> 1984 </option>
+                           <option> 1985 </option>
+                           <option> 1986 </option>
+                           <option> 1987 </option>
+                           <option> 1988 </option>
+                           <option> 1989 </option>
+                           <option> 1990 </option>
+                           <option> 1991 </option>
+                           <option> 1992 </option>
+                           <option> 1993 </option>
+                           <option> 1994 </option>
+                           <option> 1995 </option>
+                           <option> 1996 </option>
+                           <option> 1997 </option>
+                           <option> 1998 </option>
+                           <option> 1999 </option>
+                           <option> 2000 </option>
+                           <option> 2001 </option>
+                           <option> 2002 </option>
+                           <option> 2003 </option>
+                           <option> 2004 </option>
+                           <option> 2005 </option>
+                           <option> 2006 </option>
+                           <option> 2007 </option>
+                           <option> 2008 </option>
+                           <option> 2009 </option>
+                           <option> 2010 </option>
+                           <option> 2011 </option>
+                           <option> 2012 </option>
+                           <option> 2013 </option>
+                           <option> 2014 </option>
+                           <option> 2015 </option>
+                           <option> 2016 </option>
+                           <option> 2017 </option>
+                           <option> 2018 </option>
+                           <option> 2019 </option>
+                           <option> 2020 </option>
+                           <option> 2021 </option>
+                           <option> 2022 </option>
+                           <option> 2023 </option>
+                        </select>
+                     </div>
+   
+                     <h4><span> * </span> Pilih Jenis Kelamin Anda </h4>
+                     <div class="radio">
+                        <div class="item">
+                           <input type="radio" id="pria" name="jenis kelamin">
+                           <label for="pria" id="pria"> Pria </label>
+                        </div>
+   
+                        <div class="item">
+                           <input type="radio" id="wanita" name="jenis kelamin">
+                           <label for="wanita" id="wanita"> Wanita </label>
+                        </div>
+                     </div>
+                     
+                     <h4><span> * </span> Masukkan Email Anda </h4>
+                     <input type="text" placeholder="Email">
+                     
+                     <h4><span> * </span> Masukkan Password Anda </h4>
+                     <input type="password" placeholder="Password">
+   
+                     <div class="button">
+                        <button type="submit" id="submit" onclick="buatAkun()"> Konfirmasi </button>
+                        <button type="reset" id="reset"> Isi Ulang </button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+      
+            <div class="right" id="populer">
+               <h2> POPULER </h2>
+               <ul>
+                  <li><a href="#"> Desain Web </a></li>
+                  <li><a href="#"> Pemrograman </a></li>
+                  <li><a href="#"> Database </a></li>
+                  <li><a href="#"> Jaringan </a></li>
+                  <li><a href="#"> Editing </a></li>
+                  <li><a href="#"> Teknologi </a></li>
+                  <li><a href="#"> Matematika </a></li>
+                  <li><a href="#"> Bahasa Inggris </a></li>
+               </ul>
+            </div>
+         </div>
+      </main>
+   
+      <footer>
          <img src="img/logo/unigha-logo.png" alt="Logo Unigha">
-
-         <p> Design by Revan </p>
-      </div>
-
-      <div class="hero" id="beranda">
-         <div class="text">
-            <div class="ketik">
-               <p id="welcome"> SELAMAT DATANG DI </p>
-            </div>
-
-            <div class="animasi">
-               <p id="title"> PERPUSTAKAAN UNIGHA </p>
-            </div>
-
-            <p id="unigha"> Universitas Jabal Ghafur </p>
-         </div>
-
-         <img src="img/logo/unigha-logo.png" alt="Logo Unigha" onclick="sapaUser()">
-      </div>
-
-      <div class="plus"></div>
-
-      <div class="time">
-         <div class="tanggal" id="tanggal"></div>
-   
-         <div class="jam" id="jam"></div>
-      </div>
-
-      <div class="content">
-         <div class="left" id="menu">
-            <h2> MENU </h2>
-
-            <ul>
-               <li><a href="#"> Login </a></li>
-               <li><a href="#"> Daftar Buku </a></li>
-               <li><a href="#"> Berita </a></li>
-               <li><a href="#"> Layanan </a></li>
-               <li><a href="#"> Komunitas </a></li>
-               <li><a href="#"> Bantuan </a></li>
-               <li><a href="#"> Masukan </a></li>
-               <li><a href="#"> Tentang </a></li>
-            </ul>
+         <div class="left">
+            <p id="title"> Perpustakaan Unigha </p>
+            <p id="desainer"> Design by M. Revanza Yuzar </p>
          </div>
    
-         <div class="mid">
-            <div class="mid-content" id="terbaru">
-               <div class="mid-slot">
-                  <h2> TERBARU </h2>
-
-                  <div class="ketik">
-                     <h3 class="judul"> Apa Itu Website? </h3>
-                  </div>
-
-                  <img src="img/content/website.jpg" alt="Website">
-
-                  <p> Sebuah website adalah wadah daring yang terdiri dari berbagai halaman terkait yang dapat diakses melalui internet. Setiap halaman ini memiliki tujuan dan isi yang berbeda, namun tetap mempertahankan keseragaman dalam desain, tata letak, dan tema keseluruhan. Melalui kombinasi elemen-elemen seperti halaman web, tautan, navigasi, dan konten, website memberikan platform untuk berbagai tujuan, mulai dari menyajikan informasi, berbagi konten multimedia, hingga menjual produk atau layanan. </p>
-                  <p> Website berfungsi sebagai entitas yang terdiri dari halaman-halaman unik yang memiliki alamat sendiri (URL). Pengguna dapat berpindah antara halaman-halaman ini dengan bantuan tautan atau hyperlink. Navigasi, yang umumnya terletak di bagian atas atau samping halaman, memandu pengunjung dalam menjelajahi berbagai informasi yang disajikan. </p>
-                  <p> Konten, dalam bentuk teks, gambar, audio, video, dan elemen lainnya, merupakan inti dari website. Konten ini menyampaikan pesan dan informasi kepada pengunjung. Desain dan tata letak yang baik memainkan peran penting dalam presentasi konten dengan cara yang estetis, mudah dibaca, dan nyaman bagi pengguna. </p>
-                  <p> Pengaturan visual elemen-elemen dalam halaman web dilakukan melalui CSS (Cascading Style Sheets), yang mengontrol aspek tampilan seperti warna, jenis font, dan tata letak. Selain itu, JavaScript digunakan untuk memberikan interaktivitas pada website, seperti efek animasi, validasi formulir, dan respons terhadap tindakan pengguna. </p>
-                  <p> Website dihosting di server web, tempat semua file dan data yang diperlukan disimpan untuk menghasilkan halaman web kepada pengunjung. Domain, sebagai alamat unik, digunakan untuk mengakses website. Dari website pribadi hingga platform e-commerce yang kompleks, tujuan utama website adalah memberikan pengalaman bermanfaat, informatif, dan menarik bagi pengunjungnya di dunia digital. <br><br> ... </p>
-                  <a href="#"> Baca Selengkapnya >> </a>
-               </div>
-
-               <div class="mid-slot">
-                  <h2> TERBARU </h2>
-
-                  <div class="ketik">
-                     <h3 class="judul"> Belajar HTML & CSS Untuk Pemula </h3>
-                  </div>
-
-                  <img src="img/content/html&css.jpg" alt="HTML & CSS">
-
-                  <p> HTML (HyperText Markup Language) adalah bahasa markah yang digunakan untuk membuat dan mengatur struktur konten di halaman web. HTML menggunakan elemen-elemen seperti tag dan atribut untuk memformat teks, gambar, video, tautan, dan elemen-elemen lainnya agar dapat diakses dan ditampilkan dengan benar oleh browser web. </p>
-                  <p> CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk mengatur tampilan dan gaya dari elemen-elemen yang diatur oleh HTML. CSS memungkinkan Anda mengubah warna, ukuran teks, tata letak, jarak antar elemen, dan lebih banyak lagi, untuk menciptakan desain visual yang menarik dan konsisten di seluruh halaman web. </p>
-                  <p> Kombinasi antara HTML dan CSS memungkinkan Anda untuk mengontrol bagaimana konten disusun dan ditampilkan. Misalnya, Anda bisa menggunakan tag-heading (h1 hingga h6) untuk memberi hierarki pada judul-judul di halaman Anda. Lalu, dengan menggunakan CSS, Anda dapat mengatur ukuran, jenis font, warna, dan margin dari judul-judul tersebut agar sesuai dengan desain yang Anda inginkan. </p>
-                  <p> Salah satu cara penerapan klasik dari kombinasi ini adalah dalam pembuatan tata letak "dua kolom". Anda bisa menggunakan elemen "div" untuk membuat kolom-kolom tersebut dalam HTML, lalu menggunakan CSS untuk mengatur lebar kolom, jarak antar kolom, dan tampilan lainnya. </p>
-                  <p> Secara keseluruhan, HTML dan CSS bekerja bersama untuk menciptakan pengalaman visual yang konsisten dan menarik di seluruh halaman web. HTML mengatur struktur dan konten, sementara CSS mengatur tampilan dan estetika. Dengan pemisahan ini, Anda dapat merancang ulang tampilan halaman tanpa harus mengubah struktur kontennya, atau sebaliknya. Ini mendorong praktik pengembangan yang efisien dan memungkinkan pemeliharaan yang lebih mudah pada jangka panjang. <br><br> ... </p>
-                  <a href="#"> Baca Selengkapnya >> </a>
-               </div>
-
-               <div class="mid-slot">
-                  <h2> TERBARU </h2>
-
-                  <div class="ketik">
-                     <h3 class="judul"> Tutorial JavaScript Dasar </h3>
-                  </div>
-
-                  <img src="img/content/javascript.jpg" alt="JavaScript">
-
-                  <p> JavaScript adalah bahasa pemrograman yang memiliki peran krusial dalam menghidupkan halaman web. Dengan JavaScript, pengembang dapat memberikan elemen-elemen interaktif dan dinamis pada halaman web, memungkinkan pengguna untuk berinteraksi lebih jauh daripada sekadar melihat konten statis. Hal ini dicapai dengan mengontrol elemen HTML dan merespons tindakan pengguna seperti klik tombol, pengisian formulir, atau pergerakan mouse. Dengan adanya JavaScript, kita dapat menciptakan pengalaman pengguna yang lebih menarik, responsif, dan intuitif. </p>
-                  <p> Salah satu keunggulan penting JavaScript adalah kemampuannya untuk mengubah konten di halaman web tanpa harus memuat ulang halaman itu sendiri. Ini memungkinkan pembuatan aplikasi yang bekerja secara real-time, seperti panel komentar yang muncul setelah pengguna menulis komentar atau konten yang diperbarui saat pengguna melakukan scroll. Fitur ini meningkatkan kenyamanan dan efisiensi pengguna dalam menjelajahi serta berinteraksi dengan website. </p>
-                  <p> Selain itu, JavaScript memungkinkan kita membuat animasi yang menarik di halaman web. Dengan mengatur perubahan nilai-nilai tertentu pada elemen dalam interval waktu tertentu, kita dapat menciptakan efek animasi seperti pergeseran, pemberhentian, atau pelayangan elemen-elemen tersebut. Ini memberikan dimensi tambahan kepada tampilan website, meningkatkan daya tarik visual dan membantu menyampaikan pesan dengan lebih efektif. </p>
-                  <p> JavaScript juga memainkan peran penting dalam pengembangan single-page applications (SPA). Dalam model ini, website bekerja seperti aplikasi yang mengubah konten tanpa memuat ulang halaman. Ini menciptakan pengalaman pengguna yang mulus dan responsif, mirip dengan penggunaan aplikasi desktop. SPA menggunakan JavaScript untuk mengelola transisi antara tampilan yang berbeda, memungkinkan navigasi cepat dan lancar. </p>
-                  <p> Dengan komunitas pengembang yang besar dan dukungan dari berbagai framework dan library seperti React, Angular, dan Vue.js, JavaScript menjadi landasan untuk pengalaman modern di web. Dari elemen-elemen interaktif hingga aplikasi web yang kompleks, JavaScript tetap menjadi bahasa yang penuh daya untuk membangun pengalaman web yang menarik dan fungsional. <br><br> ... </p>
-                  <a href="#"> Baca Selengkapnya >> </a>
-               </div>
-            </div>
-            
-   
-            <div class="mid-account" id="buat-akun">
-               <h2> BUAT AKUN </h2>
-
-               <h3> Belum Memiliki Akun?? </h3>
-
-               <h3 id="daftar"> Daftar Sekarang! </h3>
-
-               <form action="#">
-                  <h4><span> * </span> Masukkan Nama Anda </h4>
-                  <input type="text" placeholder="Nama">
-   
-                  <h4><span> * </span> Pilih Tanggal Lahir Anda </h4>
-                  <div class="select">
-                     <select class="tanggal">
-                        <option> * Tanggal </option>
-                        <option> 1 </option>
-                        <option> 2 </option>
-                        <option> 3 </option>
-                        <option> 4 </option>
-                        <option> 5 </option>
-                        <option> 6 </option>
-                        <option> 7 </option>
-                        <option> 8 </option>
-                        <option> 9 </option>
-                        <option> 10 </option>
-                        <option> 11 </option>
-                        <option> 12 </option>
-                        <option> 13 </option>
-                        <option> 14 </option>
-                        <option> 15 </option>
-                        <option> 16 </option>
-                        <option> 17 </option>
-                        <option> 18 </option>
-                        <option> 19 </option>
-                        <option> 20 </option>
-                        <option> 21 </option>
-                        <option> 22 </option>
-                        <option> 23 </option>
-                        <option> 24 </option>
-                        <option> 25 </option>
-                        <option> 26 </option>
-                        <option> 27 </option>
-                        <option> 28 </option>
-                        <option> 29 </option>
-                        <option> 30 </option>
-                        <option> 31 </option>
-                     </select>
-                  
-                     <select class="bulan">
-                        <option> * Bulan </option>
-                        <option> Januari </option>
-                        <option> Februari </option>
-                        <option> Maret </option>
-                        <option> April </option>
-                        <option> Mei </option>
-                        <option> Juni </option>
-                        <option> Juli </option>
-                        <option> Agustus </option>
-                        <option> September </option>
-                        <option> Oktober </option>
-                        <option> November </option>
-                        <option> Desember </option>
-                     </select>
-                  
-                     <select class="tahun">
-                        <option> * Tahun </option>
-                        <option> 1945 </option>
-                        <option> 1946 </option>
-                        <option> 1947 </option>
-                        <option> 1948 </option>
-                        <option> 1949 </option>
-                        <option> 1950 </option>
-                        <option> 1951 </option>
-                        <option> 1952 </option>
-                        <option> 1953 </option>
-                        <option> 1954 </option>
-                        <option> 1955 </option>
-                        <option> 1956 </option>
-                        <option> 1957 </option>
-                        <option> 1958 </option>
-                        <option> 1959 </option>
-                        <option> 1960 </option>
-                        <option> 1961 </option>
-                        <option> 1962 </option>
-                        <option> 1963 </option>
-                        <option> 1964 </option>
-                        <option> 1965 </option>
-                        <option> 1966 </option>
-                        <option> 1967 </option>
-                        <option> 1968 </option>
-                        <option> 1969 </option>
-                        <option> 1970 </option>
-                        <option> 1971 </option>
-                        <option> 1972 </option>
-                        <option> 1973 </option>
-                        <option> 1974 </option>
-                        <option> 1975 </option>
-                        <option> 1976 </option>
-                        <option> 1977 </option>
-                        <option> 1978 </option>
-                        <option> 1979 </option>
-                        <option> 1980 </option>
-                        <option> 1981 </option>
-                        <option> 1982 </option>
-                        <option> 1983 </option>
-                        <option> 1984 </option>
-                        <option> 1985 </option>
-                        <option> 1986 </option>
-                        <option> 1987 </option>
-                        <option> 1988 </option>
-                        <option> 1989 </option>
-                        <option> 1990 </option>
-                        <option> 1991 </option>
-                        <option> 1992 </option>
-                        <option> 1993 </option>
-                        <option> 1994 </option>
-                        <option> 1995 </option>
-                        <option> 1996 </option>
-                        <option> 1997 </option>
-                        <option> 1998 </option>
-                        <option> 1999 </option>
-                        <option> 2000 </option>
-                        <option> 2001 </option>
-                        <option> 2002 </option>
-                        <option> 2003 </option>
-                        <option> 2004 </option>
-                        <option> 2005 </option>
-                        <option> 2006 </option>
-                        <option> 2007 </option>
-                        <option> 2008 </option>
-                        <option> 2009 </option>
-                        <option> 2010 </option>
-                        <option> 2011 </option>
-                        <option> 2012 </option>
-                        <option> 2013 </option>
-                        <option> 2014 </option>
-                        <option> 2015 </option>
-                        <option> 2016 </option>
-                        <option> 2017 </option>
-                        <option> 2018 </option>
-                        <option> 2019 </option>
-                        <option> 2020 </option>
-                        <option> 2021 </option>
-                        <option> 2022 </option>
-                        <option> 2023 </option>
-                     </select>
-                  </div>
-
-                  <h4><span> * </span> Pilih Jenis Kelamin Anda </h4>
-                  <div class="radio">
-                     <div class="item">
-                        <input type="radio" id="pria" name="jenis kelamin">
-                        <label for="pria" id="pria"> Pria </label>
-                     </div>
-
-                     <div class="item">
-                        <input type="radio" id="wanita" name="jenis kelamin">
-                        <label for="wanita" id="wanita"> Wanita </label>
-                     </div>
-                  </div>
-                  
-                  <h4><span> * </span> Masukkan Email Anda </h4>
-                  <input type="text" placeholder="Email">
-                  
-                  <h4><span> * </span> Masukkan Password Anda </h4>
-                  <input type="password" placeholder="Password">
-
-                  <div class="button">
-                     <button type="submit" id="submit" onclick="buatAkun()"> Konfirmasi </button>
-                     <button type="reset" id="reset"> Isi Ulang </button>
-                  </div>
-               </form>
-            </div>
+         <div class="right">
+            <p id="kolab"> M. Revanza Yuzar | Universitas Jabal Ghafur </p>
+            <p id="copyright"> Copyright © 2023 </p>
          </div>
-   
-         <div class="right" id="populer">
-            <h2> POPULER </h2>
-
-            <ul>
-               <li><a href="#"> Desain Web </a></li>
-               <li><a href="#"> Pemrograman </a></li>
-               <li><a href="#"> Database </a></li>
-               <li><a href="#"> Jaringan </a></li>
-               <li><a href="#"> Editing </a></li>
-               <li><a href="#"> Teknologi </a></li>
-               <li><a href="#"> Matematika </a></li>
-               <li><a href="#"> Bahasa Inggris </a></li>
-            </ul>
-         </div>
-      </div>
-   </main>
-
-   <footer>
-      <img src="img/logo/unigha-logo.png" alt="Logo Unigha">
-
-      <div class="left">
-         <p id="title"> Perpustakaan Unigha </p>
-         <p id="desainer"> Design by M. Revanza Yuzar </p>
-      </div>
-
-      <div class="right">
-         <p id="kolab"> M. Revanza Yuzar | Universitas Jabal Ghafur </p>
-         <p id="copyright"> Copyright © 2023 </p>
-      </div>
-   </footer>
+      </footer>
+   </div>
 
    <script src="js/script.js"></script>
 </body>

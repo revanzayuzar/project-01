@@ -4,12 +4,39 @@
 
 
 
-// Untuk menghentikan loading
+// Untuk menyelesaikan loading
 setTimeout(function() {
-    let divLoading = document.querySelector(".loading");
-    divLoading.classList.remove("loading");
-    divLoading.classList.add("finish");
-}, 5000);
+    let loading = document.querySelector(".loading");
+    loading.classList.add("finish-loading");
+}, 4800);
+
+// class AnimasiLoading {
+//     tambahFinish(element) {
+//         setTimeout(() => {
+//             element.classList.add("finish-loading");
+//         }, 4900);
+//     }
+
+//     hapusLoading(element) {
+//         setTimeout(() => {
+//             element.classList.remove("loading");
+//         }, 5000);
+//     }
+// }
+
+// const animasiLoading = new AnimasiLoading();
+// const elemen = document.getElementById("loading");
+
+// animasiLoading.tambahFinish(elemen);
+// animasiLoading.hapusLoading(elemen);
+
+
+
+// Untuk mengubah body fixed menjadi static
+setTimeout(function() {
+    let fixed = document.querySelector(".fixed");
+    fixed.classList.add("static");
+}, 4500);
 
 
 
