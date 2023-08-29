@@ -8,7 +8,7 @@
 setTimeout(function() {
     let loading = document.querySelector(".loading");
     loading.classList.add("finish-loading");
-}, 4800);
+}, 4500);
 
 // class AnimasiLoading {
 //     tambahFinish(element) {

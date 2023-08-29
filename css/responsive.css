@@ -24,6 +24,7 @@
 
     nav {
         width: 43%;
+        right: 15px;
     }
 
     .hero {
@@ -35,7 +36,7 @@
     }
 
     .hero p#title {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .time {
@@ -113,6 +114,21 @@
 
 @media (max-width: 720px) {
 
+    .hero {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .hero img {
+        margin-bottom: 25px;
+    }
+
+}
+
+
+
+@media (max-width: 650px) {
+
     nav {
         justify-content: space-evenly;
         width: 100%;
@@ -122,15 +138,6 @@
         top: auto;
         background-color: var(--primary-dark);
         padding: 7px 0;
-    }
-
-    .hero {
-        flex-direction: column-reverse;
-        justify-content: center;
-    }
-
-    .hero img {
-        margin-bottom: 25px;
     }
 
 }
@@ -158,10 +165,6 @@
     nav {
         justify-content: space-between;
         padding: 7px 25px;
-    }
-
-    .hero p#title {
-        font-size: 28px;
     }
 
     .content .left,
@@ -224,7 +227,7 @@
     }
 
     .hero p#title {
-        font-size: 26px;
+        font-size: 25px;
     }
 
     .content h2 {

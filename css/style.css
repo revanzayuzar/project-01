@@ -75,7 +75,7 @@ header img {
 
 header h1 {
    color: var(--secondary-light);
-   font-size: 25px;
+   font-size: 22px;
    font-weight: 500;
    letter-spacing: 1px;
 }
@@ -90,11 +90,11 @@ nav {
    right: 25px;
    z-index: 998;
    background-color: transparent;
-   padding: 12px 0;
+   padding: 14px 0;
 }
 
 nav img {
-   width: 36px;
+   width: 32px;
    background-color: transparent;
    filter: invert(1);
    border-radius: 5px;
@@ -259,7 +259,7 @@ nav img:active {
 
 .hero p#title {
    color: var(--secondary-light);
-   font-size: 40px;
+   font-size: 32px;
    font-weight: 700;
    animation: diagonal 12s infinite;
    animation-timing-function: ease-in-out;
@@ -506,9 +506,11 @@ nav img:active {
 
 .content .mid-content p.posting {
    font-size: 13px;
+   word-spacing: -1px;
    text-align: left;
    text-indent: 0;
    font-style: italic;
+   margin-bottom: 30px;
 }
 
 .content .mid-content p.posting span {
@@ -623,7 +625,8 @@ nav img:active {
 .content .mid-account button#submit:hover {
    background-color: rgb(0, 0, 175);
    transform: scale(0.98);
-   box-shadow: 0 0 25px blue;
+   text-shadow: 0 0 25px blue;
+   box-shadow: 0 0 36px blue;
    transition: 0.15s;
 }
 
@@ -634,7 +637,8 @@ nav img:active {
 .content .mid-account button#reset:hover {
    background-color: rgb(175, 0, 0);
    transform: scale(0.98);
-   box-shadow: 0 0 25px red;
+   text-shadow: 0 0 25px red;
+   box-shadow: 0 0 36px red;
    transition: 0.15s;
 }
 
